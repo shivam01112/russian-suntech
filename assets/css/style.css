@@ -5106,27 +5106,31 @@ input[type=range]::-webkit-slider-thumb {
 .work-process-item:last-child .shape-block {
   display: none;
 }
+.working-process-box-items-3 img{
+  width: 30px;
+}
 
 .working-process-box-items-3 {
   margin-top: 30px;
 }
 .working-process-box-items-3 .working-process-icon-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 13px;  
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 16px;
 }
 .working-process-box-items-3 .working-process-icon-box .icon {
-  border-radius: 12px;
-  background: radial-gradient(133.22% 120.44% at 100.88% 22.84%, #8B1A35 0%, #6D152D 50%, #4a0e1f 100%);
-  width: 122px;
-  height: 120px;
-  line-height: 170px;
-  text-align: center;
+    border-radius: 12px;
+    background: radial-gradient(133.22% 120.44% at 100.88% 22.84%, #8B1A35 0%, #6D152D 50%, #4a0e1f 100%);
+    width: 47px;
+    height: 51px;
+    line-height: 76px;
+    text-align: center;
+
 }
 .working-process-box-items-3 .working-process-icon-box h4 {
   font-size: 24px;
