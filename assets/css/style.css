@@ -2811,7 +2811,7 @@ select {
   overflow-x: hidden;
   color: #2c2c2c;
   padding-top: 60px;
-  border-top: 4px solid #C41E3A;
+  border-top: 4px solid #6D152D;
 }
 
 .footer-center {
@@ -2902,13 +2902,13 @@ select {
   left: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background: linear-gradient(90deg, #C41E3A, #A01820);
+  background: linear-gradient(90deg, #6D152D, #A01820);
   width: 0%;
   height: 2px;
   content: "";
 }
 .footer-nav a:hover {
-  color: #C41E3A;
+  color: #6D152D;
 }
 .footer-nav a:hover::after {
   width: 100%;
@@ -2927,7 +2927,7 @@ select {
   position: absolute;
   bottom: -15px;
   left: 0;
-  background: linear-gradient(90deg, #C41E3A 0%, rgba(196, 30, 58, 0) 100%);
+  background: linear-gradient(90deg, #6D152D 0%, rgba(196, 30, 58, 0) 100%);
   width: 80px;
   height: 3px;
   content: "";
@@ -2951,7 +2951,7 @@ select {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #C41E3A 0%, #A01820 100%);
+  background: linear-gradient(135deg, #6D152D 0%, #A01820 100%);
   color: #fff;
   font-size: 1.1rem;
   transition: all 0.3s ease;
@@ -2959,7 +2959,7 @@ select {
 }
 
 .footer-social-menu a:hover {
-  background: linear-gradient(135deg, #C41E3A 0%, #A01820 100%);
+  background: linear-gradient(135deg, #6D152D 0%, #A01820 100%);
   transform: translateY(-5px) scale(1.1);
   box-shadow: 0 8px 20px rgba(196, 30, 58, 0.4);
 }
@@ -2996,7 +2996,7 @@ select {
     height: 40px;
     min-width: 40px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #C41E3A 0%, #A01820 100%);
+    background: linear-gradient(135deg, #6D152D 0%, #A01820 100%);
     color: #fff;
     font-size: 1rem;
     margin-top: 0;
@@ -3012,7 +3012,7 @@ select {
 }
 
 .footer-contact-info li a:hover {
-  color: #C41E3A;
+  color: #6D152D;
 }
 
 .footer-contact-info li span {
@@ -5042,7 +5042,7 @@ input[type=range]::-webkit-slider-thumb {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
-  background: linear-gradient(135deg, #C41E3A 0%, #A01820 100%);
+  background: linear-gradient(135deg, #6D152D 0%, #A01820 100%);
   width: 78px;
   height: 78px;
 }
