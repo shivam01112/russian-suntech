@@ -169,6 +169,17 @@ categories.forEach(category => {
   });
 });
 
+// ==== Mobile Submenu Toggle ====
+document.querySelectorAll('.subcategory-trigger').forEach(trigger => {
+  trigger.addEventListener('click', (e) => {
+    e.preventDefault();
+    const submenu = trigger.nextElementSibling;
+    if (submenu && submenu.tagName === 'UL') {
+      submenu.style.display = submenu.style.display === 'none' ? 'block' : 'none';
+    }
+  });
+});
+
 // === Pricing Toggle Button ===
 function toggleSwitch() {
   var month = document.querySelectorAll(".month");

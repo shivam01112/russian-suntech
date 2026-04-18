@@ -79,10 +79,6 @@
             box-shadow: none !important;
         }
 
-        /* Hide orphaned desktop nav fragment (3rd li) */
-        .header-nav-list > .header-nav-item:nth-child(3) {
-            display: none !important;
-        }
         /* Suppress orphaned apostrophe text in mobile offcanvas nav */
         .category-menu .category {
             font-size: 0;
@@ -97,6 +93,15 @@
         /* Hide non-category li items in mobile nav */
         .category-menu > ul > li:not(.category) {
             display: none !important;
+        }
+        /* Add dropdown arrow to Services submenu trigger in mobile */
+        .category-menu .subcategory-trigger::after {
+            content: "\f078";
+            font-family: "Font Awesome 6 Pro";
+            font-weight: 400;
+            font-size: 12px;
+            margin-left: 8px;
+            color: #6D152D;
         }
     </style>
 
@@ -130,12 +135,13 @@
                                     <li class="header-nav-item">
                                         <a href="about.html" class="header-nav-link">About</a>
                                     </li>
-                                    
-                                    <li class="header-nav-item">
-                                        <a href="recruitment-services.html" class="header-nav-link">Recruitment</a>
-                                    </li>
-                                    <li class="header-nav-item">
-                                        <a href="#advantages" class="header-nav-link">Advantages</a>
+                                    <li class="header-nav-item has-submenu">
+                                        <a href="#" class="header-nav-link">Services</a>
+                                        <ul class="dropdown-menu-list">
+                                            <li class="dropdown-menu-item">
+                                                <a href="construction.html" class="dropdown-menu-link">Construction</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li class="header-nav-item">
                                         <a href="contact.html" class="header-nav-link">Contact Us</a>
@@ -228,10 +234,10 @@
                         <a href="about.html">About</a>
                     </li>
                     <li class="category">
-                        <a href="recruitment-services.html">Recruitment</a>
-                    </li>
-                    <li class="category">
-                        <a href="#advantages">Advantages</a>
+                        <a href="#" class="subcategory-trigger">Services</a>
+                        <ul style="margin-left: 15px; margin-top: 10px; display: none;">
+                            <li><a href="service-details.html">Construction</a></li>
+                        </ul>
                     </li>
                     <li class="category">
                         <a href="contact.html">Contact Us</a>’                    </li>
@@ -454,7 +460,7 @@
         </div> -->
 
         
-        <section class="section-service">
+        <section class="section-service p-3 p-lg-0" >
             <div class="position-relative z-2">
                 <div class="section-space">
                     <div class="container">
@@ -1273,6 +1279,19 @@
        
     </main>
     <!-- Main Wrapper -->
+    <!-- Floating contact buttons -->
+    <div class="floating-contact" id="floatingContact">
+        <a href="https://wa.me/919999999999" target="_blank" class="contact-btn whatsapp" aria-label="WhatsApp">
+            <span class="btn-wave"></span>
+            <span class="pulse" style="background: radial-gradient(circle at 30% 30%, rgba(37,211,102,0.12), transparent);"></span>
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:+5323213333" class="contact-btn call" aria-label="Call">
+            <span class="btn-wave"></span>
+            <span class="pulse" style="background: radial-gradient(circle at 30% 30%, rgba(109,21,45,0.12), transparent);"></span>
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
     <!-- ...::: Section Footer Start :::... -->
     <footer class="section-footer">
         <div class="footer">
@@ -1288,17 +1307,14 @@
                                     </a>
                                     <p>Pioneer in providing innovative workforce solutions. We deliver exceptional talent across Skilled, Semi-skilled, and Unskilled personnel for Construction, Oil & Gas, Hospitality, Manufacturing, and IT sectors.</p>
                                     <div class="social-menu footer-social-menu">
-                                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                        <a href="https://www.x.com" target="_blank" rel="noopener noreferrer">
-                                            <i class="fa-brands fa-x-twitter"></i>
-                                        </a>
-                                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://www.linkedin.com/company/suntech-engineers-contractor/" target="_blank" rel="noopener noreferrer">
                                             <i class="fa-brands fa-linkedin-in"></i>
                                         </a>
-                                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://www.instagram.com/suntechengineersandcontractors/" target="_blank" rel="noopener noreferrer">
                                             <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                        <a href="https://www.facebook.com/profile.php?id=100066634811942" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-brands fa-facebook-f"></i>
                                         </a>
                                     </div>
                                 </div>
