@@ -2945,6 +2945,8 @@ select {
 
 .footer-center {
   padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media (min-width: 768px) {
   .footer {
@@ -3103,6 +3105,59 @@ select {
   margin: 0;
 }
 
+/* Footer Widget Column Padding Adjustments */
+.footer-widget {
+  padding-left: 0px;
+  padding-right: 0px;
+  overflow: hidden;
+}
+.section-footer .col-lg-2 {
+  padding-left: 0px;
+}
+
+.footer-widget-about {
+  padding-right: 20px;
+}
+
+.footer-widget-contact {
+  overflow: visible;
+}
+
+/* Responsive Footer Widget Padding */
+@media (max-width: 1199px) {
+  .footer-widget {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .footer-widget-about {
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-widget {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  
+  .footer-contact-info li {
+    gap: 12px;
+  }
+  
+  .footer-contact-info li i {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    font-size: 0.9rem;
+  }
+  
+  .footer-contact-info li a,
+  .footer-contact-info li span {
+    font-size: 0.9rem;
+  }
+}
+
 .footer-contact-info li {
   display: flex;
   align-items: flex-start;
@@ -3138,6 +3193,10 @@ select {
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 0.95rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  display: block;
+  max-width: 100%;
 }
 
 .footer-contact-info li a:hover {
@@ -3149,6 +3208,9 @@ select {
   font-weight: 500;
   line-height: 1.6;
   font-size: 0.95rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  display: block;
 }
 .footer-widget .footer-gallery .gallery-wrap .gallery-item {
   display: -webkit-box;
