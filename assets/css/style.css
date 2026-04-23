@@ -692,7 +692,7 @@ blockquote {
 }
 @media (min-width: 1400px) {
   .space-x-128 {
-    padding-inline: 100px;
+    padding-inline: 46px;
   }
 }
 @media (min-width: 1800px) {
@@ -1845,7 +1845,7 @@ select {
   padding: 15px 0;
   margin: 0;
   list-style: none;
-  min-width: 200px;
+  min-width: 240px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
@@ -1860,12 +1860,12 @@ select {
 }
 
 .dropdown-menu-link {
-  display: block;
-  padding: 10px 25px;
-  color: #2c2c2c;
-  text-decoration: none;
-  font-size: 14px;
-  transition: all 0.3s ease;
+    display: block;
+    padding: 10px 13px;
+    color: #2c2c2c;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
 }
 
 .dropdown-menu-link:hover {
@@ -10984,7 +10984,7 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: 40px;
   border-radius: 12px;
   background: #FFF2EC;
-  padding: 30px 45px;
+  padding: 25px 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11312,6 +11312,233 @@ input[type=range]::-webkit-slider-thumb {
   border: 1px solid rgba(109, 21, 45, 0.15);
   border-radius: 12px;
   padding: 30px;
+}
+
+/* India Recruitment Section Styles */
+.india-recruitment {
+  background: linear-gradient(135deg, #f0f6f3 0%, #f8fbf9 100%);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.india-header {
+  /* text-align: center; */
+  margin-bottom: 30px;
+}
+
+.india-main-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #2c2c2c;
+  line-height: 1.2;
+  margin-bottom: 0;
+  letter-spacing: -0.5px;
+}
+
+@media screen and (max-width: 768px) {
+  .india-main-title {
+    font-size: 2rem;
+  }
+}
+
+.india-intro {
+  margin-bottom: 50px;
+}
+
+.india-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #5c6672;
+     /* margin-bottom: 20px; */
+    margin-top: 20px;
+}
+
+.india-quote {
+  background: #6D152D;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 60px;
+  box-shadow: 0 4px 15px rgba(109, 21, 45, 0.1);
+}
+
+.quote-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  line-height: 1.6;
+  letter-spacing: -0.3px;
+}
+
+@media screen and (max-width: 768px) {
+  .india-quote {
+    padding: 30px;
+  }
+  
+  .quote-text {
+    font-size: 1.1rem;
+  }
+}
+
+.india-why {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  border-left: 5px solid #6D152D;
+}
+
+.india-section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.india-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #6D152D 0%, #8B1A35 100%);
+  border-radius: 2px;
+}
+
+.india-states {
+  margin-top: 60px;
+}
+
+.states-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.state-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  border-top: 4px solid #6D152D;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.state-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(109, 21, 45, 0.15);
+}
+
+.state-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #6D152D;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+.state-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #5c6672;
+  margin: 0;
+}
+
+/* Bangladesh Standards Section */
+.india-standards {
+  margin-top: 60px;
+}
+
+.standards-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.standard-step {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  border-left: 5px solid #6D152D;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.standard-step:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(109, 21, 45, 0.15);
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  background: linear-gradient(135deg, #6D152D 0%, #8B1A35 100%);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.step-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #5c6672;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .standard-step {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .step-number {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    font-size: 1.1rem;
+  }
+  
+  .step-title {
+    font-size: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .states-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .india-section-title {
+    font-size: 1.4rem;
+  }
 }
 
 .news-section-4 {
@@ -11773,4 +12000,87 @@ input[type=range]::-webkit-slider-thumb {
                 .advantages-section .section-tag {
                     animation: pulse 2s ease-in-out infinite;
                 }
-            
+            }
+
+
+/***************************************
+ * Google Translate Custom Styles
+ ***************************************/
+/* Hide Google Translate top banner */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0 !important;
+    position: static !important;
+}
+
+/* Force hide the translate bar frame */
+body > .skiptranslate {
+    display: none !important;
+}
+
+iframe.skiptranslate {
+    display: none !important;
+}
+
+/* Hide Google Translate branding */
+.goog-te-gadget {
+    display: none !important;
+}
+
+/* Hide powered by text */
+.goog-logo-link {
+    display: none !important;
+}
+
+.goog-te-gadget span {
+    display: none !important;
+}
+
+#google_translate_element {
+    display: none !important;
+}
+
+/* Additional fixes to hide translate bar */
+#goog-gt-tt {
+    display: none !important;
+}
+
+.goog-te-balloon-frame {
+    display: none !important;
+}
+
+.goog-text-highlight {
+    background: none !important;
+    box-shadow: none !important;
+}
+
+/* Suppress orphaned apostrophe text in mobile offcanvas nav */
+.category-menu .category {
+    font-size: 0;
+    line-height: 0;
+}
+
+.category-menu .category > a,
+.category-menu .category > .subcategory-trigger,
+.category-menu .category > ul {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Hide non-category li items in mobile nav */
+.category-menu > ul > li:not(.category) {
+    display: none !important;
+}
+
+/* Add dropdown arrow to Services submenu trigger in mobile */
+.category-menu .subcategory-trigger::after {
+    content: "\f078";
+    font-family: "Font Awesome 6 Pro";
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 8px;
+    color: #ffffff;
+}
