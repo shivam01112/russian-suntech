@@ -48,64 +48,64 @@
                         <nav class="header-nav d-none d-lg-block">
                                 <ul class="header-nav-list">
                                     <li class="header-nav-item">
-                                        <a href="index.html" class="header-nav-link">Home</a>
+                                        <a href="index.html" class="header-nav-link">Главная</a>
                                     </li>
                                     <li class="header-nav-item">
-                                        <a href="about.html" class="header-nav-link">About</a>
+                                        <a href="about.html" class="header-nav-link">О нас</a>
                                     </li>
                                    
                                     <li class="header-nav-item has-submenu">
-                                        <a href="#" class="header-nav-link">Services</a>
+                                        <a href="#" class="header-nav-link">Услуги</a>
                                         <ul class="dropdown-menu-list">
                                             <li class="dropdown-menu-item">
-                                                <a href="foreign-rec.html" class="dropdown-menu-link">Foreign Recruitment (Russia)</a>
+                                                <a href="foreign-rec.html" class="dropdown-menu-link">Иностранный рекрутмент (Россия)</a>
                                             </li>
                                              <li class="dropdown-menu-item">
-                                                <a href="migration-legal.html" class="dropdown-menu-link">Migration & Legal Docs</a>
+                                                <a href="migration-legal.html" class="dropdown-menu-link">Миграция и юридические документы</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li class="header-nav-item has-submenu">
-                                        <a href="#" class="header-nav-link">Industries</a>
+                                        <a href="#" class="header-nav-link">Отрасли</a>
                                         <ul class="dropdown-menu-list">
                                             <li class="dropdown-menu-item">
-                                                <a href="construction.html" class="dropdown-menu-link">Construction</a>
+                                                <a href="construction.html" class="dropdown-menu-link">Строительство</a>
                                           </li>
                                             <li class="dropdown-menu-item">
-                                                <a href="manufacturing.html" class="dropdown-menu-link">Manufacturing & Production</a>
+                                                <a href="manufacturing.html" class="dropdown-menu-link">Производство и производство</a>
                                                </li>
                                             <li class="dropdown-menu-item">
-                                                <a href="hospitality.html" class="dropdown-menu-link">Hospitality & Hotels</a>
+                                                <a href="hospitality.html" class="dropdown-menu-link">Гостеприимство и отели</a>
                                                     </li>
                                                      <li class="dropdown-menu-item">
-                                                <a href="logistics.html" class="dropdown-menu-link">Logistics & Warehousing</a>
+                                                <a href="logistics.html" class="dropdown-menu-link">Логистика и складское хозяйство</a>
                                                     </li>
                                                      <li class="dropdown-menu-item">
-                                                <a href="agriculture.html" class="dropdown-menu-link">Agriculture</a>
+                                                <a href="agriculture.html" class="dropdown-menu-link">Сельское хозяйство</a>
                                                     </li>
                                                      <li class="dropdown-menu-item">
-                                                <a href="it.html" class="dropdown-menu-link">IT & Technical
+                                                <a href="it.html" class="dropdown-menu-link">ИТ и техника
 </a> </ul>
                                     </li>
                                      <li class="header-nav-item has-submenu">
-                                        <a href="#" class="header-nav-link">Source Countries</a>
+                                        <a href="#" class="header-nav-link">Страны-источники</a>
                                         <ul class="dropdown-menu-list">
                                             <li class="dropdown-menu-item">
-                                                <a href="india.html" class="dropdown-menu-link">India</a>
+                                                <a href="india.html" class="dropdown-menu-link">Индия</a>
                                             </li>
                                              <li class="dropdown-menu-item">
-                                                <a href="nepal.html" class="dropdown-menu-link">Nepal</a>
+                                                <a href="nepal.html" class="dropdown-menu-link">Непал</a>
                                             </li>
                                             <li class="dropdown-menu-item">
-                                                <a href="sri-lanka.html" class="dropdown-menu-link">Sri Lanka</a>
+                                                <a href="sri-lanka.html" class="dropdown-menu-link">Шри-Ланка</a>
                                             </li>
                                             <li class="dropdown-menu-item">
-                                                <a href="bangladesh.html" class="dropdown-menu-link">Bangladesh</a>
+                                                <a href="bangladesh.html" class="dropdown-menu-link">Бангладеш</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li class="header-nav-item">
-                                        <a href="contact.html" class="header-nav-link">Contact Us</a>
+                                        <a href="contact.html" class="header-nav-link">Свяжитесь с нами</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -113,8 +113,9 @@
                             
                         <!-- Right Side - Language, Icons & Contact -->
                         <div class="header-right-side">
-                            <select name="localization" id="localization" class="localization-clean">
-                                <option value="english" selected>English</option>
+                            <select name="localization" id="localization" class="localization-clean" onchange="changeLanguage(this.value)">
+                                <option value="russian" selected>Русский</option>
+                                <option value="english">English</option>
                                 <option value="spanish">Spanish</option>
                                 <option value="french">French</option>
                                 <option value="german">German</option>
@@ -124,8 +125,11 @@
                                 <option value="chinese">Chinese (Simplified)</option>
                                 <option value="arabic">Arabic</option>
                                 <option value="hindi">Hindi</option>
-                                <option value="russian">Russian</option>
                             </select>
+                            
+                            <script>
+                                document.getElementById('localization').value = 'russian';
+                            </script>
                             
                             <!-- Hidden Google Translate Element -->
                             <div id="google_translate_element" style="display: none;"></div>
@@ -139,7 +143,7 @@
                                 <i class="fa-light fa-phone"></i>
                                 <div>
                                     <a href="tel:+532093213333" class="phone-number">+532 (09) 321 33 33</a>
-                                    <span class="phone-label">Mo-Fr 9:00 - 19:30</span>
+                                    <span class="phone-label">Пн-Пт 9:00 - 19:30</span>
                                 </div>
                             </div>
                             
@@ -189,19 +193,19 @@
             <nav class="category-menu">
                 <ul>
                     <li class="category">
-                        <a href="index.html">Home</a>
+                        <a href="index.html">Главная</a>
                     </li>
                     <li class="category">
-                        <a href="about.html">About</a>
+                        <a href="about.html">О нас</a>
                     </li>
                     <li class="category">
-                        <a href="#" class="subcategory-trigger">Services</a>
+                        <a href="#" class="subcategory-trigger">Услуги</a>
                         <ul style="margin-left: 15px; margin-top: 10px; display: none;">
-                            <li><a href="service-details.html">Construction</a></li>
+                            <li><a href="service-details.html">Строительство</a></li>
                         </ul>
                     </li>
                     <li class="category">
-                        <a href="contact.html">Contact Us</a>’                    </li>
+                        <a href="contact.html">Свяжитесь с нами</a>’                    </li>
                 </ul>
             </nav>
 
@@ -218,9 +222,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col col-lg-8 mx-auto">
-                        <h5 class="offcanvas-title mb-2" id="searchBarLabel">Search by keyword</h5>
+                        <h5 class="offcanvas-title mb-2" id="searchBarLabel">Поиск по ключевому слову</h5>
                         <form action="#" method="get" class="position-relative">
-                            <input type="search" placeholder="Search here" class="form-input pe-5" required>
+                            <input type="search" placeholder="Поиск здесь" class="form-input pe-5" required>
                             <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
                     </div>
@@ -306,10 +310,10 @@
             <div class="breadcrumb-area">
                 <div class="container">
                     <div class="breadcrumb-wrapper">
-                        <h1 class="breadcrumb-title">About Us</h1>
+                        <h1 class="breadcrumb-title">О нас</h1>
                         <nav class="breadcrumb">
-                            <a class="breadcrumb-item" href="index.html">Home</a>
-                            <span class="breadcrumb-item active" aria-current="page">About Us</span>
+                            <a class="breadcrumb-item" href="index.html">Главная</a>
+                            <span class="breadcrumb-item active" aria-current="page">О нас</span>
                         </nav>
                     </div>
                     <div class="breadcrumb-bg-block">
@@ -483,23 +487,19 @@
                     <div class="about-ceo-content">
                       
 
-                        <h2 class="about-main-heading">We provide the following services to companies and organizations:</h2>
+                        <h2 class="about-main-heading">Мы предоставляем следующие услуги компаниям и организациям:</h2>
 
                         <ul class="about-services-list">
-                            <li>Skilled, semi-skilled, and unskilled workforce deployment across industries;</li>
-                            <li>Specialized talent acquisition for Construction, Oil & Gas, and MEP sectors;</li>
-                            <li>Hospitality professionals including chefs, waiters, and service staff;</li>
-                            <li>Manufacturing personnel with technical expertise;</li>
-                            <li>Comprehensive workforce management and compliance solutions;</li>
-                            <li>End-to-end recruitment from sourcing to onboarding.</li>
+                            <li>Профессиональные, полупрофессиональные и неквалифицированные кадры во всех отраслях;</li>
+                            <li>Специализированный подбор талантов для строительства, нефтегаза и технических направлений;</li>
+                            <li>Профессионалы гостеприимства, включая шефов, артем, и поваров;</li>
+                            <li>Персонал производства с техническим опытом;</li>
+                            <li>Комплексные решения для кадрового управления и соответствия;</li>
+                            <li>Полноцикловый подбор персонала от поиска до адаптации.</li>
                         </ul>
 
                         <p class="about-description">
-                            Suntech Engineers & Contractors has been a pioneer in the recruitment industry since its inception. 
-                            We have built a strong reputation in the workforce solutions market with over three decades of experience. 
-                            We have extensive expertise in this field, having successfully deployed thousands of professionals across 
-                            global markets. Our commitment goes beyond just providing manpower—we ensure quality, reliability, and 
-                            long-term partnerships with every client we serve.
+                            Около втечение нескольких десятилетий является пионером в рекрутменте. Мы построили понятие мастерства кадрового решения с более чем три декады опыта. Мы имеем обстные знания в этой области, успешно распланирова тысячи профессионалов на глобальных рынках. Наше заобязанность выходит за пределы агентства — мы гарантируем качество, надежность и дальнейшие отношения с каждым клиентом.
                         </p>
 
                         <div class="about-signature-block">
@@ -930,7 +930,7 @@
                                         <img src="assets/imgs/logo.png" alt="logo-dark" width="126"
                                             height="56">
                                     </a>
-                                    <p>Pioneer in providing innovative workforce solutions. We deliver exceptional talent across Skilled, Semi-skilled, and Unskilled personnel for Construction, Oil & Gas, Hospitality, Manufacturing, and IT sectors.</p>
+                                    <p>Пионер в области провидения инновационных решений в области кадров. Мы реализуем высококвалифицированные кадры во всех сегментах - сквалифицированное управление, медиайные, и неквалифицированные кадры для строительства, нефтяногаз, гостеприимства, производства и ИТ.</p>
                                     <div class="social-menu footer-social-menu">
                                         <a href="https://www.linkedin.com/company/suntech-engineers-contractor/" target="_blank" rel="noopener noreferrer">
                                             <i class="fa-brands fa-linkedin-in"></i>
@@ -948,7 +948,7 @@
                               
                                   
                                 <div class="footer-widget footer-widget-nav">
-                                    <h4 class="footer-title">Services</h4>
+                                    <h4 class="footer-title">Услуги</h4>
                                     <nav class="footer-nav">
                                         <ul>
                                             <li><a href="foreign-rec.html">Foreign Recruitment</a></li>
@@ -961,14 +961,14 @@
                          
                             <div class="col-lg-2">
                                 <div class="footer-widget footer-widget-nav">
-                                    <h4 class="footer-title">Industries</h4>
+                                    <h4 class="footer-title">Отрасли</h4>
                                     <nav class="footer-nav">
                                         <ul>
                                             <li><a href="construction.html">Construction</a></li>
                                             <li><a href="manufacturing.html">Manufacturing</a></li>
                                             <li><a href="hospitality.html">Hospitality</a></li>
-                                            <li><a href="logistics.html">Logistics</a></li>
-                                            <li><a href="agriculture.html">Agriculture</a></li>
+                                            <li><a href="logistics.html">Логистика</a></li>
+                                            <li><a href="agriculture.html">Сельское хозяйство</a></li>
                                             <li><a href="it.html">IT & Technical</a></li>
                                         </ul>
                                     </nav>
@@ -976,13 +976,13 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="footer-widget footer-widget-nav">
-                                    <h4 class="footer-title">Source Countries</h4>
+                                    <h4 class="footer-title">Страны-источники</h4>
                                     <nav class="footer-nav">
                                         <ul>
-                                            <li><a href="india.html">India</a></li>
-                                            <li><a href="nepal.html">Nepal</a></li>
-                                            <li><a href="sri-lanka.html">Sri Lanka</a></li>
-                                            <li><a href="bangladesh.html">Bangladesh</a></li>
+                                            <li><a href="india.html">Индия</a></li>
+                                            <li><a href="nepal.html">Непал</a></li>
+                                            <li><a href="sri-lanka.html">Шри-Ланка</a></li>
+                                            <li><a href="bangladesh.html">Бангладеш</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -1015,7 +1015,7 @@
                 <div class="container">
                     <div class="row justify-content-between align-items-center">
                         <div class="col-auto">
-                            <p class="copyright-text mb-0 text-white">&copy; 2025 Suntech Engineers & Contractors. All rights reserved.</p>
+                            <p class="copyright-text mb-0 text-white">&copy; 2026 Suntech Engineers & Contractors. All rights reserved.</p>
                         </div>
                         <div class="col-auto">
                             <div class="footer-bottom-links">
@@ -1031,73 +1031,7 @@
     </footer>
     <!-- ...::: Section Footer End :::... -->
 
-    <button class="scroll-to-top">
-                                    <nav class="footer-nav">
-                                        <ul>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
-                                            <li><a href="teams.html">Our Members</a></li>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="faqs.html">FAQ’s</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="footer-widget footer-widget-nav">
-                                    <h4 class="footer-title">Our Services</h4>
-                                    <nav class="footer-nav">
-                                        <ul>
-                                            <li><a href="service-details.html">Construction Workforce</a></li>
-                                            <li><a href="service-details.html">Oil & Gas Staffing</a></li>
-                                            <li><a href="service-details.html">MEP Technicians</a></li>
-                                            <li><a href="service-details.html">Manufacturing Personnel</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="footer-widget footer-widget-contact">
-                                    <h4 class="footer-title">Get In Touch</h4>
-                                    <ul class="footer-contact-info">
-                                         <li>
-                                            <i class="fa-solid fa-location-dot"></i>
-                                            <span>123 Business Avenue, Suite 100<br>New York, NY 10001</span>
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-phone"></i>
-                                            <a href="tel:+74994556135">+7 499 455 6135</a>
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-envelope"></i>
-                                            <a href="mailto:info@vneshpersonnel.ru">info@vneshpersonnel.ru</a>
-                                        </li>
-                                       
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-auto">
-                            <p class="copyright-text mb-0 text-white">&copy; 2025 Suntech Engineers & Contractors. All rights reserved.</p>
-                        </div>
-                        <div class="col-auto">
-                            <div class="footer-bottom-links">
-                                <a href="#" class="text-white">Privacy Policy</a>
-                                <span class="text-white mx-2">|</span>
-                                <a href="#" class="text-white">Terms of Service</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+   
     <!-- ...::: Section Footer End :::... -->
     <!-- Floating contact buttons -->
     <div class="floating-contact" id="floatingContact">
