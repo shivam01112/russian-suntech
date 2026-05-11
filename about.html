@@ -238,74 +238,6 @@
     <main class="main-wrapper">
         <!-- ...::: Section Breadcrumb Start :::... -->
         <section class="section-breadcrumb">
-            <style>
-                .section-breadcrumb .breadcrumb-area {
-                    position: relative;
-                   padding: 240px 0 70px;
-                    overflow: hidden;
-                   
-                }
-
-                .section-breadcrumb .breadcrumb-area::before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    background:linear-gradient(#00000046,#000000ee), url('assets/imgs/breadcrumb-bg.jpg') center/cover no-repeat;
-                   
-                }
-
-                .section-breadcrumb .breadcrumb-wrapper {
-                    position: relative;
-                    z-index: 2;
-                    text-align: center;
-                }
-
-                .section-breadcrumb .breadcrumb-title {
-                    color: #fff;
-                    font-size: 48px;
-                    font-weight: 700;
-                   
-                }
-
-                .section-breadcrumb .breadcrumb {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 10px;
-                    padding: 0;
-                    margin: 0;
-                }
-
-                .section-breadcrumb .breadcrumb-item {
-                    text-decoration: none;
-                    font-size: 15px;
-                    font-weight: 500;
-                    padding: 6px 0px;
-                    border-radius: 20px;
-                    transition: all 0.3s ease;
-                    color: #fff;
-                }
-
-                
-
-              
-
-                .section-breadcrumb .breadcrumb-bg-block {
-                    display: none;
-                }
-
-                @media (max-width: 768px) {
-                    .section-breadcrumb .breadcrumb-title {
-                        font-size: 36px;
-                    }
-                    .section-breadcrumb .breadcrumb-area {
-                        padding: 80px 0;
-                    }
-                }
-            </style>
 
             <div class="breadcrumb-area">
                 <div class="container">
@@ -327,341 +259,79 @@
         <!-- ...::: Section Breadcrumb End :::... -->
              
 
-        <section class="main-abt-section">
-            <style>
-                .main-abt-section {
-                    padding: 80px 0;
-                    background: #f4f4f4;
-                }
-
-                .about-ceo-wrapper {
-                    display: flex;
-                    gap: 50px;
-                    align-items: flex-start;
-                }
-
-                .about-ceo-image {
-                    flex: 0 0 45%;
-                    max-width: 600px;
-                }
-
-                .about-ceo-image img {
-                    width: 100%;
-                    height: auto;
-                    border-radius: 20px;
-                    box-shadow: 0 10px 40px rgba(109, 21, 45, 0.15);
-                }
-
-                .about-ceo-content {
-                    flex: 1;
-                    padding: 20px 0;
-                }
-
-                .about-breadcrumb {
-                    display: flex;
-                    align-items: center;
-                    gap: 8px;
-                    margin-bottom: 30px;
-                    font-size: 14px;
-                    color: #666;
-                }
-
-                .about-breadcrumb a {
-                    color: #333;
-                    text-decoration: none;
-                    transition: color 0.3s ease;
-                }
-
-                .about-breadcrumb a:hover {
-                    color: #6D152D;
-                }
-
-                .about-breadcrumb span {
-                    color: #999;
-                }
-
-                .about-main-heading {
-                    font-size: 32px;
-                    font-weight: 700;
-                    color: #1a1a1a;
-                    margin-bottom: 25px;
-                    line-height: 1.4;
-                }
-
-                .about-services-list {
-                    list-style: none;
-                    padding: 0;
-                    margin: 25px 0;
-                }
-
-                .about-services-list li {
-                    padding: 2px 0;
-                    padding-left: 25px;
-                    position: relative;
-                    color: #555;
-                    line-height: 1.7;
-                }
-
-                .about-services-list li::before {
-                    content: '•';
-                    position: absolute;
-                    left: 0;
-                    color: #6D152D;
-                    font-size: 20px;
-                    font-weight: bold;
-                }
-
-                .about-description {
-                    color: #666;
-                    line-height: 1.8;
-                    margin: 25px 0;
-                    font-size: 15px;
-                }
-
-                .about-signature-block {
-                    margin-top: 40px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: flex-end;
-                }
-
-                .about-ceo-info h4 {
-                    font-size: 24px;
-                    font-weight: 700;
-                    color: #1a1a1a;
-                    margin-bottom: 5px;
-                }
-
-                .about-ceo-info p {
-                    color: #999;
-                    font-size: 14px;
-                    margin: 0;
-                }
-
-                .about-signature {
-                    max-width: 150px;
-                }
-
-                .about-signature img {
-                    width: 100%;
-                    height: auto;
-                }
-
-                @media (max-width: 992px) {
-                    .about-ceo-wrapper {
-                        flex-direction: column;
-                        gap: 40px;
-                    }
-
-                    .about-ceo-image {
-                        flex: 0 0 100%;
-                        max-width: 100%;
-                    }
-
-                    .about-main-heading {
-                        font-size: 26px;
-                    }
-                }
-
-                @media (max-width: 576px) {
-                    .main-abt-section {
-                        padding: 50px 0;
-                    }
-
-                    .about-signature-block {
-                        flex-direction: column;
-                        align-items: flex-start;
-                        gap: 20px;
-                    }
-                }
-            </style>
-
+        <section class="main-abt-section mt-5 pt-3">
             <div class="container">
-                <div class="about-ceo-wrapper">
-                    <!-- CEO Image -->
-                    <div class="about-ceo-image">
-                        <img src="assets/imgs/ceo.jpg" alt="CEO Suntech Engineers & Contractors">
+                <div class="about-ceo-wrapper ">
+                    <div class="row"><div class="col-lg-6">
+                        <div class="about-ceo-image founder-message-image">
+                        <img src="assets/imgs/ceo.jpg" alt="О компании VneshPersonnel" width="400" height="500" class="img-fluid">
                     </div>
-
-                    <!-- CEO Content -->
+                </div>
+                    <div class="col-lg-6"><!-- CEO Content -->
                     <div class="about-ceo-content">
-                      
-
-                        <h2 class="about-main-heading">Мы предоставляем следующие услуги компаниям и организациям:</h2>
-
-                        <ul class="about-services-list">
-                            <li>Профессиональные, полупрофессиональные и неквалифицированные кадры во всех отраслях;</li>
-                            <li>Специализированный подбор талантов для строительства, нефтегаза и технических направлений;</li>
-                            <li>Профессионалы гостеприимства, включая шефов, артем, и поваров;</li>
-                            <li>Персонал производства с техническим опытом;</li>
-                            <li>Комплексные решения для кадрового управления и соответствия;</li>
-                            <li>Полноцикловый подбор персонала от поиска до адаптации.</li>
-                        </ul>
+                        <h2 class="about-main-heading">О компании VneshPersonnel</h2>
 
                         <p class="about-description">
-                            Около втечение нескольких десятилетий является пионером в рекрутменте. Мы построили понятие мастерства кадрового решения с более чем три декады опыта. Мы имеем обстные знания в этой области, успешно распланирова тысячи профессионалов на глобальных рынках. Наше заобязанность выходит за пределы агентства — мы гарантируем качество, надежность и дальнейшие отношения с каждым клиентом.
+                            VneshPersonnel — международная организация по подбору персонала и поддержке рабочей силы, основанная в 2024 году Шиввангом Шармой. Мы специализируемся на предоставлении квалифицированной иностранной рабочей силы для Российской Федерации, соединяя работодателей с надежными и опытными специалистами из Индии и других ключевых рынков труда.
+                        </p>
+
+                        <p class="about-description">
+                            Наши услуги охватывают полный цикл рекрутинга — от зарубежного подбора и профессионального отбора до трудоустройства и поддержки на месте — с обеспечением полного соответствия требованиям трудового и миграционного законодательства России. Руководствуясь международными стандартами и учитывая особенности российского рынка труда, мы предлагаем надежные кадровые решения, способствующие долгосрочному успеху работодателей.
                         </p>
 
                         <div class="about-signature-block">
                             <div class="about-ceo-info">
-                                <h4>Rajesh Kumar</h4>
-                                <p>Founder and CEO</p>
+                                <h4>Шивванг Шарма</h4>
+                                <p>Основатель и Председатель</p>
                             </div>
                            
                         </div>
-                    </div>
+                    </div></div></div>
+                    <!-- CEO Image -->
+                    
+
+                    
                 </div>
             </div>
         </section>
 
+        <!-- ...::: Section Founder Message Start :::... -->
+        <section class="founder-message-section">
+            <div class="container">
+                <div class="founder-message-wrapper">
+                    <!-- Founder Image -->
+                    <div class="founder-message-image">
+                        <img src="assets/imgs/ceo.jpg" alt="Шивванг Шарма, Основатель VneshPersonnel" width="400" height="500" class="img-fluid">
+                    </div>
 
+                    <!-- Founder Message Content -->
+                    <div class="founder-message-content">
+                        <h2 class="founder-message-title">Обращение Председателя и Основателя</h2>
 
+                        <p class="founder-message-text">
+                            В VneshPersonnel наша миссия заключается в предоставлении этичных, законных и надежных решений в области подбора персонала для Российской Федерации. С момента основания компании в 2024 году мы сосредоточены на поддержке российских работодателей квалифицированными иностранными кадрами, полностью соответствующими операционным и нормативным требованиям.
+                        </p>
 
+                        <p class="founder-message-text">
+                            Совместно с нашим сооснователем, г-жой Ольгой Морозовой, чьё глубокое понимание российского рынка труда усиливает наш локальный опыт и подход к соблюдению законодательства, мы обеспечиваем структурированный, прозрачный и полностью законный процесс подбора персонала в соответствии с трудовыми и миграционными нормами России.
+                        </p>
 
+                        <p class="founder-message-text">
+                            Наша ответственность выходит за рамки рекрутинга. Благодаря тщательному отбору персонала, строгому соблюдению законодательства и постоянной поддержке мы стремимся выстраивать долгосрочные партнерские отношения с российскими работодателями, основанные на доверии, эффективности и совместном развитии.
+                        </p>
 
-        <!-- ...::: Section FAQ Start :::... -->
-        <section class="section-faq">
-            <div class="position-relative z-1">
-                <div class="section-space">
-                    <div class="container">
-                        <div class="row gy-5 align-items-center align-items-lg-start">
-                            <div class="col-lg-6">
-                                <div class="faq-content">
-                                    <div class="section-content-block">
-                                        <span class="section-tag">RECRUITMENT CHALLENGES</span>
-                                        <h2 class="section-title">Top 5 Problems When the Company  Practices Self-Recruitment
-                                        </h2>
-                                        <p class="section-text">Accelerate innovation with world-class tech teams We’ll
-                                            match you to an entire remote team of incredible</p>
-                                    </div>
-
-                                    <!-- FAQ Accordion -->
-                                    <div class="faq-accordion mt-5" id="accordionExample">
-                                        <div class="accordion-item accordion-item-1">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseOne" aria-expanded="true"
-                                                    aria-controls="collapseOne">
-                                                    1. Time-Consuming Process & Resource Drain
-                                                </button>
-                                            </h2>
-                                            <div id="collapseOne" class="accordion-collapse collapse show"
-                                                data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                    Accelerate innovation with world-class tech teams We’ll match you to
-                                                    an
-                                                    entire remote team of incredible freelance talent for all your
-                                                    software.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-item accordion-item-1">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                                    aria-expanded="false" aria-controls="collapseTwo">
-                                                    2. Limited Access to Quality Talent Pool
-                                                </button>
-                                            </h2>
-                                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                                data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                    Accelerate innovation with world-class tech teams We’ll match you to
-                                                    an
-                                                    entire remote team of incredible freelance talent for all your
-                                                    software.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-item accordion-item-1">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                                    aria-expanded="false" aria-controls="collapseThree">
-                                                    3. Higher Costs Due to Bad Hires
-                                                </button>
-                                            </h2>
-                                            <div id="collapseThree" class="accordion-collapse collapse"
-                                                data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                    Accelerate innovation with world-class tech teams We’ll match you to
-                                                    an
-                                                    entire remote team of incredible freelance talent for all your
-                                                    software.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-item accordion-item-1">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                                    aria-expanded="false" aria-controls="collapseFour">
-                                                    4. Compliance & Legal Risk Exposure
-                                                </button>
-                                            </h2>
-                                            <div id="collapseFour" class="accordion-collapse collapse"
-                                                data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                    Accelerate innovation with world-class tech teams We’ll match you to
-                                                    an
-                                                    entire remote team of incredible freelance talent for all your
-                                                    software.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-item accordion-item-1">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                                    aria-expanded="false" aria-controls="collapseFive">
-                                                    5. Lack of Specialized Industry Knowledge
-                                                </button>
-                                            </h2>
-                                            <div id="collapseFive" class="accordion-collapse collapse"
-                                                data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                    Recruiting for specialized roles in Construction, Oil & Gas, MEP, or Hospitality requires deep industry knowledge and understanding of technical qualifications. Internal HR teams often lack this specialized expertise, leading to mismatched hires and longer vacancy periods.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- FAQ Accordion -->
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="faq-image-block">
-                                    <div class="image-block">
-                                        <img src="assets/imgs/about-pg.jpg" alt="about-img-1" width="457"
-                                            height="539" class="animate-bottom-to-top img-fluid rounded">
-                                    </div>
-                                    <div class="image-block">
-                                        <img src="assets/imgs/about-pg-0.jpg" alt="about-img-1" width="315"
-                                            height="291" class="animate-top-to-bottom img-fluid rounded">
-                                    </div>
-                                    <img src="assets/images/faq-bg-element-1.png" alt="dot-1" width="292" height="379"
-                                        class="faq-shape faq-shape-1 img-fluid">
-                                    <img src="assets/images/abstract/dot-1.svg" alt="dot-1" width="198" height="93"
-                                        class="animate-bottom-to-top faq-shape faq-shape-2 img-fluid">
-                                </div>
-                            </div>
+                        <div class="founder-info">
+                            <h4>Шивванг Шарма</h4>
+                            <p>Основатель и Председатель</p>
+                            <p style="color: #999; font-size: 13px; margin-top: 10px;">VneshPersonnel</p>
                         </div>
                     </div>
                 </div>
-                <img src="assets/images/abstract/world-globe-orange.svg" alt="world-globe-orange" width="271"
-                    height="540" class="faq-globe">
             </div>
         </section>
-        <!-- ...::: Section FAQ End :::... -->
+        <!-- ...::: Section Founder Message End :::... -->
 
 
-
-        
-        <section class="advantages-section">
-            
-
-        
-        </section>
-       
 
 
 
@@ -718,8 +388,8 @@
                         <div class="col-lg-10 col-xl-8 col-xxl-7">
                             <div class="section-content-block text-center">
                                 
-                                <h2 class="section-title is-text-dark">Mission, Vision & Values</h2>
-                                <p class="section-text col-lg-10 mx-auto wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Driven by our commitment to connecting exceptional talent with opportunities, we deliver workforce solutions that drive business success globally.</p>
+                                <h2 class="section-title is-text-dark">Видение, Миссия и Ценности</h2>
+                                <p class="section-text col-lg-10 mx-auto wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Руководствуясь нашей ответственностью перед российскими работодателями, мы предоставляем комплексные кадровые решения, обеспечивающие долгосрочный успех и операционную надежность.</p>
                             </div>
                         </div>
                     </div>
@@ -730,10 +400,10 @@
                                     <div class="icon">
                                         <i class="fa-solid fa-bullseye"></i>
                                     </div>
-                                    <h4>Mission</h4>
+                                    <h4>Видение</h4>
                                 </div>
                                 
-                                 <p>To provide skilled, semi-skilled, and unskilled professionals across Construction, Oil & Gas, Hospitality, Manufacturing, and IT sectors with exceptional quality, reliability, and long-term partnership value.</p>
+                                 <p>Надежный международный партнер по подбору персонала для России.</p>
                             </div>
                         </div>
                         <div class="col-xl-1 d-none d-xl-block wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
@@ -747,10 +417,10 @@
                                     <div class="icon">
                                         <i class="fa-solid fa-eye"></i>
                                     </div>
-                                    <h4>Vision</h4>
+                                    <h4>Миссия</h4>
                                 </div>
                                 
-                                 <p>To be the global leader in innovative workforce solutions, recognized for our expertise in talent acquisition, deployment, and comprehensive workforce management across diverse industries.</p>
+                                 <p>Этичный рекрутинг, правовая прозрачность и стабильность рабочей силы.</p>
                             </div>
                         </div>
                          <div class="col-xl-1 d-none d-xl-block wow fadeInUp" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
@@ -764,18 +434,218 @@
                                     <div class="icon">
                                         <i class="fa-solid fa-gem"></i>
                                     </div>
-                                    <h4>Value</h4>
+                                    <h4>Ценности</h4>
                                 </div>
                                 
-                                 <p>Integrity, excellence, and innovation drive everything we do. We value ethical practices, quality assurance, and building lasting relationships built on trust and mutual success.</p>
+                                 <p>Честность • Законность • Качество • Ответственность</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
+        <!-- ...::: Section How We Work Start :::... -->
+        <section class="how-we-work-section section-space">
+            <style>
+                .how-we-work-section {
+                    background: linear-gradient(135deg, #f9f9f9 0%, #f4f4f4 100%);
+                    padding: 80px 0;
+                }
 
+                .how-we-work-title {
+                    text-align: center;
+                    margin-bottom: 60px;
+                }
 
+                .how-we-work-title h2 {
+                    font-size: 42px;
+                    font-weight: 700;
+                    color: #1a1a1a;
+                    margin-bottom: 20px;
+                }
+
+                .how-we-work-title p {
+                    font-size: 18px;
+                    color: #666;
+                    max-width: 700px;
+                    margin: 0 auto;
+                }
+
+                .process-steps {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    max-width: 900px;
+                    margin: 0 auto;
+                }
+
+                .process-step {
+                    display: flex;
+                    gap: 30px;
+                    align-items: flex-start;
+                    padding: 30px;
+                    background: white;
+                    border-radius: 15px;
+                    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+                    transition: all 0.3s ease;
+                    position: relative;
+                }
+
+                .process-step:hover {
+                    box-shadow: 0 10px 35px rgba(109, 21, 45, 0.15);
+                    transform: translateY(-3px);
+                }
+
+                .process-step-number {
+                    flex-shrink: 0;
+                    width: 60px;
+                    height: 60px;
+                    background: linear-gradient(135deg, #6D152D 0%, #8B1E3D 100%);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-size: 32px;
+                    font-weight: 700;
+                    box-shadow: 0 5px 15px rgba(109, 21, 45, 0.2);
+                }
+
+                .process-step-content h3 {
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: #1a1a1a;
+                    margin: 0 0 12px 0;
+                }
+
+                .process-step-content p {
+                    font-size: 15px;
+                    color: #666;
+                    line-height: 1.6;
+                    margin: 0;
+                }
+
+                .process-step-arrow {
+                    text-align: center;
+                    font-size: 28px;
+                    color: #6D152D;
+                    margin: 10px 0;
+                }
+
+                .process-result {
+                    /* margin-top: 50px; */
+                    padding: 40px 30px;
+                    background: #6D152D;
+                    border-radius: 15px;
+                    text-align: center;
+                    color: white;
+                    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+                }
+
+                .process-result h3 {
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin: 0 0 15px 0;
+                }
+
+                .process-result p {
+                    font-size: 16px;
+                    margin: 8px 0;
+                    line-height: 1.6;
+                    color: #000;
+                }
+
+                @media (max-width: 768px) {
+                    .how-we-work-title h2 {
+                        font-size: 32px;
+                    }
+
+                    .process-step {
+                        padding: 20px;
+                        gap: 20px;
+                    }
+
+                    .process-step-number {
+                        width: 50px;
+                        height: 50px;
+                        font-size: 28px;
+                    }
+
+                    .process-step-content h3 {
+                        font-size: 18px;
+                    }
+
+                    .process-result {
+                        padding: 30px 20px;
+                    }
+
+                    .process-result h3 {
+                        font-size: 20px;
+                    }
+                }
+            </style>
+
+            <div class="container">
+                <div class="how-we-work-title">
+                    <h2>Как мы работаем</h2>
+                    <p>Полный цикл рекрутинга с обеспечением соответствия всем требованиям российского законодательства</p>
+                </div>
+
+                <div class="process-steps">
+                    <!-- Step 1 -->
+                    <div class="process-step wow fadeInUp" data-wow-delay=".1s">
+                        <div class="process-step-number">1</div>
+                        <div class="process-step-content">
+                            <h3>Зарубежный подбор и профессиональный отбор</h3>
+                            <p>Подбор квалифицированных иностранных специалистов из утвержденных рынков труда</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step-arrow">↓</div>
+
+                    <!-- Step 2 -->
+                    <div class="process-step wow fadeInUp" data-wow-delay=".2s">
+                        <div class="process-step-number">2</div>
+                        <div class="process-step-content">
+                            <h3>Одобрение работодателем и юридическое оформление</h3>
+                            <p>Оформление контрактов, разрешений на работу, виз и миграционного сопровождения</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step-arrow">↓</div>
+
+                    <!-- Step 3 -->
+                    <div class="process-step wow fadeInUp" data-wow-delay=".3s">
+                        <div class="process-step-number">3</div>
+                        <div class="process-step-content">
+                            <h3>Подготовка перед выездом и трудоустройство</h3>
+                            <p>Языковая подготовка, культурная ориентация и организованный переезд в Россию</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step-arrow">↓</div>
+
+                    <!-- Step 4 -->
+                    <div class="process-step wow fadeInUp" data-wow-delay=".4s">
+                        <div class="process-step-number">4</div>
+                        <div class="process-step-content">
+                            <h3>Поддержка на месте и интеграция персонала</h3>
+                            <p>Адаптационная помощь, координационная поддержка и постоянный контроль соответствия требованиям</p>
+                        </div>
+                    </div>
+
+                    <!-- Result -->
+                    <div class="process-result wow fadeInUp" data-wow-delay=".5s">
+                        <h3>Результат</h3>
+                        <p>Законно трудоустроенный персонал • Операционная стабильность • Долгосрочная кадровая надежность для России</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ...::: Section How We Work End :::... -->
 
         
         <!-- ...::: Section Client Slider Start :::... -->

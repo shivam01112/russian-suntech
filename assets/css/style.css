@@ -1921,7 +1921,7 @@ select {
   justify-content: center;
   width: 44px;
   height: 44px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #e0e0e0;~
   border-radius: 50%;
   background: #ffffff;
   color: #2c2c2c;
@@ -4287,7 +4287,7 @@ select {
 .breadcrumb-bg-block::after {
   position: absolute;
   inset: 0;
-  background-color: rgba(109, 21, 45, 0.9);
+  background-color:rgb(0 0 0 / 63%);
   content: "";
 }
 .breadcrumb-bg-block img:nth-child(2) {
@@ -11309,6 +11309,230 @@ input[type=range]::-webkit-slider-thumb {
   left: 0;
   top: 0;
   z-index: -1;
+}
+
+/***************************************
+* - About Page / Founder Message
+***************************************/
+.founder-message-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.founder-message-wrapper {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+
+.founder-message-image {
+  flex: 0 0 40%;
+  max-width: 500px;
+}
+
+.founder-message-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(109, 21, 45, 0.15);
+}
+
+.founder-message-content {
+  flex: 1;
+  padding: 20px 0;
+}
+
+.founder-message-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+.founder-message-text {
+  color: #666;
+  line-height: 1.8;
+  margin: 20px 0;
+  font-size: 15px;
+}
+
+.founder-info {
+  margin-top: 40px;
+}
+
+.founder-info h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 5px;
+}
+
+.founder-info p {
+  color: #999;
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .founder-message-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .founder-message-image {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .founder-message-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 576px) {
+  .founder-message-section {
+    padding: 50px 0;
+  }
+}
+
+/***************************************
+* - About Page / How We Work
+***************************************/
+.how-we-work-section {
+  background: linear-gradient(135deg, #f9f9f9 0%, #f4f4f4 100%);
+  padding: 80px 0;
+}
+
+.how-we-work-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.how-we-work-title h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.how-we-work-title p {
+  font-size: 18px;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.process-step {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.process-step:hover {
+  box-shadow: 0 10px 35px rgba(109, 21, 45, 0.15);
+  transform: translateY(-3px);
+}
+
+.process-step-number {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #6D152D 0%, #8B1E3D 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  box-shadow: 0 5px 15px rgba(109, 21, 45, 0.2);
+}
+
+.process-step-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 12px 0;
+}
+
+.process-step-content p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.process-step-arrow {
+  text-align: center;
+  font-size: 28px;
+  color: #6D152D;
+  margin: 10px 0;
+}
+
+.process-result {
+  margin-top: 50px;
+  padding: 40px 30px;
+  background: linear-gradient(135deg, #6D152D 0%, #8B1E3D 100%);
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+}
+
+.process-result h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+}
+
+.process-result p {
+  font-size: 16px;
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .how-we-work-title h2 {
+    font-size: 32px;
+  }
+
+  .process-step {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .process-step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+  }
+
+  .process-step-content h3 {
+    font-size: 18px;
+  }
+
+  .process-result {
+    padding: 30px 20px;
+  }
+
+  .process-result h3 {
+    font-size: 20px;
+  }
 }
 
 /***************************************
