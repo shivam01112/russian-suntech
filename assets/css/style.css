@@ -1695,7 +1695,7 @@ select {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     z-index: 1;
-    width: calc(100% + 50px);
+    width: calc(110% + 50px);
   }
 }
 @media (min-width: 1800px) {
@@ -8136,6 +8136,12 @@ input[type=range]::-webkit-slider-thumb {
   width: 84px;
   height: 84px;
 }
+.service-icon i {
+  font-size: 40px;
+  color: #6D152D;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 .service-icon img {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -8144,8 +8150,19 @@ input[type=range]::-webkit-slider-thumb {
   position: absolute;
   opacity: 0;
 }
+.service-item:hover .service-icon i {
+  color: #fff;
+  font-size: 45px;
+}
 .service-content {
   margin-top: 60px;
+}
+
+/* Client Logo Image Styling */
+.client-logo-img {
+  /* max-height: 50px;
+  width: auto; */
+  object-fit: contain;
 }
 .service-link {
   color: #6D152D;

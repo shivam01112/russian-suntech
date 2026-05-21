@@ -1,376 +1,500 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suntech | Trusted Global Workforce Solutions</title>
-    <link rel="shortcut icon" href="assets/imgs/fav.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/imgs/fav.png" type="image/x-icon" />
 
     <!-- Icon Fonts -->
-    <link rel="stylesheet" href="assets/fonts/iconfonts/flat-icons/flaticon_trazan.css" />
-    <link rel="stylesheet" href="assets/fonts/iconfonts/font-awesome/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="assets/fonts/iconfonts/flat-icons/flaticon_trazan.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/fonts/iconfonts/font-awesome/stylesheet.css"
+    />
     <!-- Web Fonts -->
-    <link rel="stylesheet" href="assets/fonts/webfonts/dm-sans/stylesheet.css">
-    <link rel="stylesheet" href="assets/fonts/webfonts/raleway/stylesheet.css">
+    <link
+      rel="stylesheet"
+      href="assets/fonts/webfonts/dm-sans/stylesheet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/fonts/webfonts/raleway/stylesheet.css"
+    />
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="assets/css/vendors/animate.css">
-    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendors/animate.css" />
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/vendors/jos.css" />
 
     <!-- Development css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Production css -->
     <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
 
     <!-- Google Translate Custom Styles -->
     <style>
-        /* Hide Google Translate top banner */
-        .goog-te-banner-frame.skiptranslate {
-            display: none !important;
-        }
-        
-        body {
-            top: 0 !important;
-            position: static !important;
-        }
-        
-        /* Force hide the translate bar frame */
-        body > .skiptranslate {
-            display: none !important;
-        }
-        
-        iframe.skiptranslate {
-            display: none !important;
-        }
-        
-        /* Hide Google Translate branding */
-        .goog-te-gadget {
-            display: none !important;
-        }
-        
-        /* Hide powered by text */
-        .goog-logo-link {
-            display: none !important;
-        }
-        
-        .goog-te-gadget span {
-            display: none !important;
-        }
-        
-        #google_translate_element {
-            display: none !important;
-        }
-        
-        /* Additional fixes to hide translate bar */
-        #goog-gt-tt {
-            display: none !important;
-        }
-        
-        .goog-te-balloon-frame {
-            display: none !important;
-        }
-        
-        .goog-text-highlight {
-            background: none !important;
-            box-shadow: none !important;
-        }
+      /* Hide Google Translate top banner */
+      .goog-te-banner-frame.skiptranslate {
+        display: none !important;
+      }
 
-        /* Suppress orphaned apostrophe text in mobile offcanvas nav */
-        .category-menu .category {
-            font-size: 0;
-            line-height: 0;
-        }
-        .category-menu .category > a,
-        .category-menu .category > .subcategory-trigger,
-        .category-menu .category > ul {
-            font-size: 1rem;
-            line-height: 1.5;
-        }
-        /* Hide non-category li items in mobile nav */
-        .category-menu > ul > li:not(.category) {
-            display: none !important;
-        }
-        /* Add dropdown arrow to Services submenu trigger in mobile */
-        .category-menu .subcategory-trigger::after {
-            content: "\f078";
-            font-family: "Font Awesome 6 Pro";
-            font-weight: 400;
-            font-size: 12px;
-            margin-left: 8px;
-            color: #ffffff;
-        }
+      body {
+        top: 0 !important;
+        position: static !important;
+      }
+
+      /* Force hide the translate bar frame */
+      body > .skiptranslate {
+        display: none !important;
+      }
+
+      iframe.skiptranslate {
+        display: none !important;
+      }
+
+      /* Hide Google Translate branding */
+      .goog-te-gadget {
+        display: none !important;
+      }
+
+      /* Hide powered by text */
+      .goog-logo-link {
+        display: none !important;
+      }
+
+      .goog-te-gadget span {
+        display: none !important;
+      }
+
+      #google_translate_element {
+        display: none !important;
+      }
+
+      /* Additional fixes to hide translate bar */
+      #goog-gt-tt {
+        display: none !important;
+      }
+
+      .goog-te-balloon-frame {
+        display: none !important;
+      }
+
+      .goog-text-highlight {
+        background: none !important;
+        box-shadow: none !important;
+      }
+
+      /* Suppress orphaned apostrophe text in mobile offcanvas nav */
+      .category-menu .category {
+        font-size: 0;
+        line-height: 0;
+      }
+      .category-menu .category > a,
+      .category-menu .category > .subcategory-trigger,
+      .category-menu .category > ul {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      /* Hide non-category li items in mobile nav */
+      .category-menu > ul > li:not(.category) {
+        display: none !important;
+      }
+      /* Add dropdown arrow to Services submenu trigger in mobile */
+      .category-menu .subcategory-trigger::after {
+        content: "\f078";
+        font-family: "Font Awesome 6 Pro";
+        font-weight: 400;
+        font-size: 12px;
+        margin-left: 8px;
+        color: #ffffff;
+      }
     </style>
+  </head>
 
-</head>
-
-<body class="page-wrapper" id="page-wrapper">
+  <body class="page-wrapper" id="page-wrapper">
     <!-- <div id="preloader">
         <h2 class="preloader-text" id="logo-text">Trazan</h2>
     </div> -->
 
     <!-- ...::: Section Header Start :::... -->
     <div class="section-header">
-        <div class="header-wrapper">
-            <!-- Simple Clean Header -->
-            <div class="header-clean-style">
-                <div class="space-x-128">
-                    <div class="header-clean-area">
-                        <!-- Logo -->
-                        <div class="header-logo">
-                            <a href="index.html">
-                                <img src="assets/imgs/logo.png" alt="logo" class="img img-responsive img-fluid" width="auto" height="auto">
-                            </a>
-                        </div>
-                        
-                        <!-- Main Navigation Menu -->
-                        <nav class="header-nav d-none d-lg-block">
-                                <ul class="header-nav-list">
-                                    <li class="header-nav-item">
-                                        <a href="index.html" class="header-nav-link">Главная</a>
-                                    </li>
-                                    <li class="header-nav-item">
-                                        <a href="about.html" class="header-nav-link">О нас</a>
-                                    </li>
-                                   
-                                    <li class="header-nav-item has-submenu">
-                                        <a href="#" class="header-nav-link">Услуги</a>
-                                        <ul class="dropdown-menu-list">
-                                            <li class="dropdown-menu-item">
-                                                <a href="foreign-rec.html" class="dropdown-menu-link">Иностранный рекрутмент (Россия)</a>
-                                            </li>
-                                             <li class="dropdown-menu-item">
-                                                <a href="migration-legal.html" class="dropdown-menu-link">Миграция и юридические документы</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="header-nav-item has-submenu">
-                                        <a href="#" class="header-nav-link">Отрасли</a>
-                                        <ul class="dropdown-menu-list">
-                                            <li class="dropdown-menu-item">
-                                                <a href="construction.html" class="dropdown-menu-link">Строительство</a>
-                                          </li>
-                                            <li class="dropdown-menu-item">
-                                                <a href="manufacturing.html" class="dropdown-menu-link">Производство и производство</a>
-                                               </li>
-                                            <li class="dropdown-menu-item">
-                                                <a href="hospitality.html" class="dropdown-menu-link">Гостеприимство и отели</a>
-                                                    </li>
-                                                     <li class="dropdown-menu-item">
-                                                <a href="logistics.html" class="dropdown-menu-link">Логистика и складское хозяйство</a>
-                                                    </li>
-                                                     <li class="dropdown-menu-item">
-                                                <a href="agriculture.html" class="dropdown-menu-link">Сельское хозяйство</a>
-                                                    </li>
-                                                     <li class="dropdown-menu-item">
-                                                <a href="it.html" class="dropdown-menu-link">ИТ и техника
-</a> </ul>
-                                    </li>
-                                     <li class="header-nav-item has-submenu">
-                                        <a href="#" class="header-nav-link">Страны-источники</a>
-                                        <ul class="dropdown-menu-list">
-                                            <li class="dropdown-menu-item">
-                                                <a href="india.html" class="dropdown-menu-link">Индия</a>
-                                            </li>
-                                             <li class="dropdown-menu-item">
-                                                <a href="nepal.html" class="dropdown-menu-link">Непал</a>
-                                            </li>
-                                            <li class="dropdown-menu-item">
-                                                <a href="sri-lanka.html" class="dropdown-menu-link">Шри-Ланка</a>
-                                            </li>
-                                            <li class="dropdown-menu-item">
-                                                <a href="bangladesh.html" class="dropdown-menu-link">Бангладеш</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="header-nav-item">
-                                        <a href="contact.html" class="header-nav-link">Свяжитесь с нами</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <!-- Header Menu -->
-                            
-                        <!-- Right Side - Language, Icons & Contact -->
-                        <div class="header-right-side">
-                            <select name="localization" id="localization" class="localization-clean" onchange="changeLanguage(this.value)">
-                                <option value="russian" selected>Русский</option>
-                                <option value="english">English</option>
-                                <option value="spanish">Spanish</option>
-                                <option value="french">French</option>
-                                <option value="german">German</option>
-                                <option value="italian">Italian</option>
-                                <option value="portuguese">Portuguese</option>
-                                <option value="japanese">Japanese</option>
-                                <option value="chinese">Chinese (Simplified)</option>
-                                <option value="arabic">Arabic</option>
-                                <option value="hindi">Hindi</option>
-                            </select>
-                            
-                            <script>
-                                document.getElementById('localization').value = 'russian';
-                            </script>
-                            
-                            <!-- Hidden Google Translate Element -->
-                            <div id="google_translate_element" style="display: none;"></div>
-                            
-                            <!-- <button class="header-user-event-button header-user-event-button-search" type="button"
+      <div class="header-wrapper">
+        <!-- Simple Clean Header -->
+        <div class="header-clean-style">
+          <div class="space-x-128">
+            <div class="header-clean-area">
+              <!-- Logo -->
+              <div class="header-logo">
+                <a href="index.html">
+                  <img
+                    src="assets/imgs/logo.png"
+                    alt="logo"
+                    class="img img-responsive img-fluid"
+                    width="auto"
+                    height="auto"
+                  />
+                </a>
+              </div>
+
+              <!-- Main Navigation Menu -->
+              <nav class="header-nav d-none d-lg-block">
+                <ul class="header-nav-list">
+                  <li class="header-nav-item">
+                    <a href="index.html" class="header-nav-link">Главная</a>
+                  </li>
+                  <li class="header-nav-item">
+                    <a href="about.html" class="header-nav-link">О нас</a>
+                  </li>
+
+                  <li class="header-nav-item has-submenu">
+                    <a href="#" class="header-nav-link">Услуги</a>
+                    <ul class="dropdown-menu-list">
+                      <li class="dropdown-menu-item">
+                        <a href="foreign-rec.html" class="dropdown-menu-link"
+                          >Иностранный рекрутмент (Россия)</a
+                        >
+                      </li>
+                      <li class="dropdown-menu-item">
+                        <a
+                          href="migration-legal.html"
+                          class="dropdown-menu-link"
+                          >Миграция и юридические документы</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-nav-item has-submenu">
+                    <a href="#" class="header-nav-link">Отрасли</a>
+                    <ul class="dropdown-menu-list">
+                      <li class="dropdown-menu-item">
+                        <a href="construction.html" class="dropdown-menu-link"
+                          >Строительство</a
+                        >
+                      </li>
+                      <li class="dropdown-menu-item">
+                        <a href="manufacturing.html" class="dropdown-menu-link"
+                          >Производство и производство</a
+                        >
+                      </li>
+                      <li class="dropdown-menu-item">
+                        <a href="hospitality.html" class="dropdown-menu-link"
+                          >Гостеприимство и отели</a
+                        >
+                      </li>
+                      <li class="dropdown-menu-item">
+                        <a href="logistics.html" class="dropdown-menu-link"
+                          >Логистика и складское хозяйство</a
+                        >
+                      </li>
+                      <li class="dropdown-menu-item">
+                        <a href="agriculture.html" class="dropdown-menu-link"
+                          >Сельское хозяйство</a
+                        >
+                      </li>
+                      <li class="dropdown-menu-item">
+                        <a href="it.html" class="dropdown-menu-link"
+                          >ИТ и техника
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-nav-item has-submenu">
+                    <a href="#" class="header-nav-link">Страны-источники</a>
+                    <ul class="dropdown-menu-list">
+                      <li class="dropdown-menu-item">
+                        <a href="india.html" class="dropdown-menu-link"
+                          >Индия</a
+                        >
+                      </li>
+                      <li class="dropdown-menu-item">
+                        <a href="nepal.html" class="dropdown-menu-link"
+                          >Непал</a
+                        >
+                      </li>
+                      <li class="dropdown-menu-item">
+                        <a href="sri-lanka.html" class="dropdown-menu-link"
+                          >Шри-Ланка</a
+                        >
+                      </li>
+                      <li class="dropdown-menu-item">
+                        <a href="bangladesh.html" class="dropdown-menu-link"
+                          >Бангладеш</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-nav-item">
+                    <a href="contact.html" class="header-nav-link"
+                      >Свяжитесь с нами</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <!-- Header Menu -->
+
+              <!-- Right Side - Language, Icons & Contact -->
+              <div class="header-right-side">
+                <select
+                  name="localization"
+                  id="localization"
+                  class="localization-clean"
+                  onchange="changeLanguage(this.value)"
+                >
+                  <option value="russian" selected>Русский</option>
+                  <option value="english">English</option>
+                  <option value="spanish">Spanish</option>
+                  <option value="french">French</option>
+                  <option value="german">German</option>
+                  <option value="italian">Italian</option>
+                  <option value="portuguese">Portuguese</option>
+                  <option value="japanese">Japanese</option>
+                  <option value="chinese">Chinese (Simplified)</option>
+                  <option value="arabic">Arabic</option>
+                  <option value="hindi">Hindi</option>
+                </select>
+
+                <script>
+                  document.getElementById("localization").value = "russian";
+                </script>
+
+                <!-- Hidden Google Translate Element -->
+                <div id="google_translate_element" style="display: none"></div>
+
+                <!-- <button class="header-user-event-button header-user-event-button-search" type="button"
                                 data-bs-toggle="offcanvas" data-bs-target="#searchBar" aria-controls="searchBar">
                                 <i class="fa-light fa-search"></i>
                             </button> -->
-                            
-                            <div class="header-phone-contact">
-                                <i class="fa-light fa-phone"></i>
-                                <div>
-                                    <a href="tel:+532093213333" class="phone-number">+532 (09) 321 33 33</a>
-                                    <span class="phone-label">Пн-Пт 9:00 - 19:30</span>
-                                </div>
-                            </div>
-                            
-                            <div class="header-social-links">
-                                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </a>
-                                <a href="https://www.x.com" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                </a>
-                                <a href="https://www.dribbble.com" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-dribbble"></i>
-                                </a>
-                                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </div>
-                            
-                            <!-- Responsive Offcanvas Menu Button -->
-                            <button class="header-user-event-button navbar-toggler d-block d-lg-none" type="button"
-                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasManu"
-                                aria-controls="offcanvasManu">
-                                <i class="fa-regular fa-bars"></i>
-                            </button>
-                            <!-- Responsive Offcanvas Menu Button -->
-                        </div>
-                        
-                    </div>
+
+                <div class="header-phone-contact">
+                  <i class="fa-light fa-phone"></i>
+                  <div>
+                    <a href="tel:+532093213333" class="phone-number"
+                      >+7 499 455 6135</a
+                    >
+                    <span class="phone-label">Пн-Пт 9:00 - 19:30</span>
+                  </div>
                 </div>
+
+                <div class="header-social-links">
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="https://www.x.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                  <a
+                    href="https://www.dribbble.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-dribbble"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+
+                <!-- Responsive Offcanvas Menu Button -->
+                <button
+                  class="header-user-event-button navbar-toggler d-block d-lg-none"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasManu"
+                  aria-controls="offcanvasManu"
+                >
+                  <i class="fa-regular fa-bars"></i>
+                </button>
+                <!-- Responsive Offcanvas Menu Button -->
+              </div>
             </div>
-            <!-- End Simple Clean Header -->
+          </div>
         </div>
+        <!-- End Simple Clean Header -->
+      </div>
     </div>
     <!-- ...::: Section Header End :::... -->
 
     <!-- ...::: Offcanvas Menu Start:::... -->
-    <div class="offcanvas offcanvas-start block-bg-dark" tabindex="-1" id="offcanvasManu"
-        aria-labelledby="offcanvasManu">
-        <div class="offcanvas-header">
-            <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <a href="index.html" class="d-flex  mb-4">
-                <img src="assets/imgs/logo.png" alt="logo"  width="56" height="56" class="img-fluid">
-            </a>
+    <div
+      class="offcanvas offcanvas-start block-bg-dark"
+      tabindex="-1"
+      id="offcanvasManu"
+      aria-labelledby="offcanvasManu"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <a href="index.html" class="d-flex mb-4">
+          <img
+            src="assets/imgs/logo.png"
+            alt="logo"
+            width="56"
+            height="56"
+            class="img-fluid"
+          />
+        </a>
 
-            <nav class="category-menu">
-                <ul>
-                    <li class="category">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="category">
-                        <a href="about.html">About</a>
-                    </li>
-                    <li class="category">
-                        <a href="#" class="subcategory-trigger">Услуги</a>
-                        <ul style="margin-left: 15px; margin-top: 10px; display: none;">
-                            <li><a href="foreign-rec.html">Иностранный рекрутмент (Россия)</a></li>
-                            <li><a href="migration-legal.html">Миграция и юридические документы</a></li>
-                        </ul>
-                    </li>
-                    <li class="category">
-                        <a href="#" class="subcategory-trigger">Отрасли</a>
-                        <ul style="margin-left: 15px; margin-top: 10px; display: none;">
-                            <li><a href="construction.html">Construction</a></li>
-                            <li><a href="manufacturing.html">Производство</a></li>
-                            <li><a href="hospitality.html">Гостеприимство</a></li>
-                            <li><a href="logistics.html">Logistics & Warehousing</a></li>
-                            <li><a href="agriculture.html">Agriculture</a></li>
-                            <li><a href="it.html">IT & Technical</a></li>
-                        </ul>
-                    </li>
-                    <li class="category">
-                        <a href="#" class="subcategory-trigger">Страны-источники</a>
-                        <ul style="margin-left: 15px; margin-top: 10px; display: none;">
-                            <li><a href="india.html">Индия</a></li>
-                            <li><a href="nepal.html">Непал</a></li>
-                            <li><a href="sri-lanka.html">Шри-Ланка</a></li>
-                            <li><a href="bangladesh.html">Бангладеш</a></li>
-                        </ul>
-                    </li>
-                    <li class="category">
-                        <a href="contact.html">Свяжитесь с нами</a>’                    </li>
-                </ul>
-            </nav>
-
-        </div>
+        <nav class="category-menu">
+          <ul>
+            <li class="category">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="category">
+              <a href="about.html">About</a>
+            </li>
+            <li class="category">
+              <a href="#" class="subcategory-trigger">Услуги</a>
+              <ul style="margin-left: 15px; margin-top: 10px; display: none">
+                <li>
+                  <a href="foreign-rec.html">Иностранный рекрутмент (Россия)</a>
+                </li>
+                <li>
+                  <a href="migration-legal.html"
+                    >Миграция и юридические документы</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="category">
+              <a href="#" class="subcategory-trigger">Отрасли</a>
+              <ul style="margin-left: 15px; margin-top: 10px; display: none">
+                <li><a href="construction.html">Construction</a></li>
+                <li><a href="manufacturing.html">Производство</a></li>
+                <li><a href="hospitality.html">Гостеприимство</a></li>
+                <li><a href="logistics.html">Logistics & Warehousing</a></li>
+                <li><a href="agriculture.html">Agriculture</a></li>
+                <li><a href="it.html">IT & Technical</a></li>
+              </ul>
+            </li>
+            <li class="category">
+              <a href="#" class="subcategory-trigger">Страны-источники</a>
+              <ul style="margin-left: 15px; margin-top: 10px; display: none">
+                <li><a href="india.html">Индия</a></li>
+                <li><a href="nepal.html">Непал</a></li>
+                <li><a href="sri-lanka.html">Шри-Ланка</a></li>
+                <li><a href="bangladesh.html">Бангладеш</a></li>
+              </ul>
+            </li>
+            <li class="category">
+              <a href="contact.html">Свяжитесь с нами</a>’
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <!-- ...::: Offcanvas Menu End:::... -->
 
     <!-- Offcanvas Search -->
-    <div class="offcanvas offcanvas-top" tabindex="-1" id="searchBar" aria-labelledby="searchBarLabel">
-        <div class="offcanvas-header">
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-lg-8 mx-auto">
-                        <h5 class="offcanvas-title mb-2" id="searchBarLabel">Поиск по ключевому слову</h5>
-                        <form action="#" method="get" class="position-relative">
-                            <input type="search" placeholder="Поиск здесь" class="form-input pe-5" required>
-                            <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </form>
-                    </div>
-                </div>
+    <div
+      class="offcanvas offcanvas-top"
+      tabindex="-1"
+      id="searchBar"
+      aria-labelledby="searchBarLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="container">
+          <div class="row">
+            <div class="col col-lg-8 mx-auto">
+              <h5 class="offcanvas-title mb-2" id="searchBarLabel">
+                Поиск по ключевому слову
+              </h5>
+              <form action="#" method="get" class="position-relative">
+                <input
+                  type="search"
+                  placeholder="Поиск здесь"
+                  class="form-input pe-5"
+                  required
+                />
+                <button class="search-button">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Offcanvas Search -->
 
     <!-- Main Wrapper -->
     <main class="main-wrapper">
-        <!-- ...::: Section Hero Start :::... -->
-        <section class="section-hero">
-            <div class="hero-area hero-area-1">
-                <div class="container-fluid space-x-128">
-                    <div class="row">
-                        <div class="col-sm-9 col-md-8 col-lg-7 col-xl-6 col-xxl-6">
-                            <div class="section-content-block">
-                                <span class="section-tag is-white-transparent">Innovative Workforce Solutions</span>
-                                <h2 class="section-title hero-title text-light"><strong>ВНЕШПЕРСОНАЛ</strong></h2>
-                                <p class="section-text text-light mb-5">надежный партнер в России, предоставляющий полный спектр услуг по подбору квалифицированной рабочей силы из Индии, Бангладеш, Непала, Шри-Ланки и стран Африки для ключевых отраслей. </p>
+      <!-- ...::: Section Hero Start :::... -->
+      <section class="section-hero">
+        <div class="hero-area hero-area-1">
+          <div class="container-fluid space-x-128">
+            <div class="row">
+              <div class="col-sm-9 col-md-8 col-lg-7 col-xl-6 col-xxl-6">
+                <div class="section-content-block">
+                  <span class="section-tag is-white-transparent"
+                    >О компании </span
+                  >
+                  <h2 class="section-title hero-title text-light">
+                    <strong>«ВНЕШПЕРСОНАЛ» </strong>
+                  </h2>
+                  <p class="section-text text-light mb-5">
+                   — эксклюзивный представитель лидера индийского рынка «Suntech Engineers and Contractors» по подбору персонала. За 35 лет работы трудоустроено свыше 500 тысяч сотрудников в более чем 30 стран мира в
+разных сферах деятельности.h
 
-                                <a href="contact.html" class="btn btn-secondary-alt">
-                                    Найти своего сотрудника
-                                    <div class="btn-icon">
-                                        <span>
-                                            <i class="fa-regular fa-arrow-right"></i>
-                                        </span>
-                                        <span>
-                                            <i class="fa-regular fa-arrow-right"></i>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                  </p>
+
+                  <a href="contact.html" class="btn btn-secondary-alt">
+                    Найти своего сотрудника
+                    <div class="btn-icon">
+                      <span>
+                        <i class="fa-regular fa-arrow-right"></i>
+                      </span>
+                      <span>
+                        <i class="fa-regular fa-arrow-right"></i>
+                      </span>
                     </div>
+                  </a>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <!-- Hero Background Element -->
-                <div class="hero-area-linear-gradient-1"></div>
-                <img src="assets/imgs/home-hero.jpg" alt="hero-bg-img-1" width="1920" height="898"
-                    class="img-cover hero-bg-1">
-                <!-- <img src="assets/images/hero-th-1-element-1.png" alt="hero-th-1-element-1" width="621" height="741"
+          <!-- Hero Background Element -->
+          <div class="hero-area-linear-gradient-1"></div>
+          <img
+            src="assets/imgs/home-hero.jpg"
+            alt="hero-bg-img-1"
+            width="1920"
+            height="898"
+            class="img-cover hero-bg-1"
+          />
+          <!-- <img src="assets/images/hero-th-1-element-1.png" alt="hero-th-1-element-1" width="621" height="741"
                     class="img-fluid hero-th-1 hero-th-1-element-1 animate-bottom-to-top" data-animation-duration="1.5"
                     data-animation-delay="0.5">
                 <img src="assets/images/hero-th-1-element-2.png" alt="hero-th-1-element-2" width="496" height="163"
@@ -381,88 +505,151 @@
                     data-animation-delay="1.5">
                 <img src="assets/images/hero-th-1-element-4.png" alt="hero-th-1-element-4" width="499" height="838"
                     class="img-fluid hero-th-1 hero-th-1-element-4"> -->
-                <!-- Hero Background Element -->
-            </div>
-        </section>
-        <!-- ...::: Section Hero End :::... -->
-
-       
+          <!-- Hero Background Element -->
+        </div>
+      </section>
+      <!-- ...::: Section Hero End :::... -->
 
       <section class="section-about">
-            <div class="position-relative z-1">
-                <div class="section-space">
-                    <div class="container">
-                        <div class="row justify-content-between gy-2">
-                            <div class="col-lg-6 col-xl-auto order-2 order-lg-1">
-                                <div class="service-image-block">
-                                    <img src="assets/imgs/abt-1.jpg" alt="service-about-img" width="529" height="640" class="img-fluid animate-fade" style="opacity: 1;">
-                                    <div class="service-image-inner-block">
-                                        <img src="assets/imgs/abt-2.jpg" alt="service-about-inner-img" width="253" height="325" class="img-fluid animate-bottom-to-top" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                    </div>
-                                    <div class="service-image-inner-block-2">
-                                        <img src="assets/images/abstract/world-globe-dark-2.png" alt="world-globe-dark-2" width="577" height="534" class="img-fluid animate-zoom-in" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                    </div>
-                                    <!-- <div class="service-img-card animate-top-to-bottom" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="position-relative z-1">
+          <div class="section-space">
+            <div class="container">
+              <div class="row justify-content-between gy-2">
+                <div class="col-lg-6 col-xl-auto order-2 order-lg-1">
+                  <div class="service-image-block">
+                    <img
+                      src="assets/imgs/abt-1.jpg"
+                      alt="service-about-img"
+                      width="529"
+                      height="640"
+                      class="img-fluid animate-fade"
+                      style="opacity: 1"
+                    />
+                    <div class="service-image-inner-block">
+                      <img
+                        src="assets/imgs/abt-2.jpg"
+                        alt="service-about-inner-img"
+                        width="253"
+                        height="325"
+                        class="img-fluid animate-bottom-to-top"
+                        style="
+                          translate: none;
+                          rotate: none;
+                          scale: none;
+                          transform: translate(0px, 0px);
+                          opacity: 1;
+                        "
+                      />
+                    </div>
+                    <div class="service-image-inner-block-2">
+                      <img
+                        src="assets/images/abstract/world-globe-dark-2.png"
+                        alt="world-globe-dark-2"
+                        width="577"
+                        height="534"
+                        class="img-fluid animate-zoom-in"
+                        style="
+                          translate: none;
+                          rotate: none;
+                          scale: none;
+                          transform: translate(0px, 0px);
+                          opacity: 1;
+                        "
+                      />
+                    </div>
+                    <!-- <div class="service-img-card animate-top-to-bottom" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
                                         <img src="assets/images/award-check.svg" alt="award-check" width="64" height="64" class="img-fluid">
                                         <div class="content">
                                             <h2>35+</h2>
                                             <p>Years Connecting Talent to Industry.</p>
                                         </div>
                                     </div> -->
-                                </div>
-                            </div>
-                            <div class="col-lg-6 order-1 order-lg-2">
-                                <div class="section-content-block">
-                                    <span class="section-tag">WELCOME TO ВНЕШПЕРСОНАЛ</span>
-                                    <h2 class="section-title is-text-dark">ПРЕИМУЩЕСТВА РАБОТЫ С «ВНЕШПЕРСОНАЛ»</h2>
-                                </div>
-                                <div class="service-content-block ">
-                                    <blockquote class="my-4 text-lg">
-                                       Мы не просто подбираем сотрудников — мы становимся вашим надежным партнером по формированию кадрового резерва, неся ответственность на каждом этапе.
-                                    </blockquote>
-                                    <p class="mb-4">«ВНЕШПЕРСОНАЛ» поставляет качественную и экономически эффективную рабочую силу. Мы предлагаем персонал любого уровня: от разнорабочих до квалифицированных кадров во все регионы Российской Федерации. 
-Наша компания предоставляет надежных и физически выносливых работников, обеспечивая российские предприятия компетентными сотрудниками. 
-</p>
-                                    <p>Мы подбираем персонал в том числе и по специальностям, которые пользуются высоким спросом в России: сварщики, слесари, операторы производственных и ленточных линий, ЧПУ-станков, электромонтажников и др.</p>
-                                </div>
-                                <div class="d-flex flex-wrap gap-3 align-items-center mt-5">
-                                    <a href="contact.html" class="btn btn-secondary">
-                                        Узнать больше
-                                        <div class="btn-icon">
-                                            <span>
-                                                <i class="fa-regular fa-arrow-right"></i>
-                                            </span>
-                                            <span>
-                                                <i class="fa-regular fa-arrow-right"></i>
-                                            </span>
-                                        </div>
-                                    </a>
-                                    <div class="service-info">
-                                        <div class="icon">
-                                            <i class="fa-light fa-phone"></i>
-                                        </div>
-                                        <div class="content">
-                                            <span>Позвоните нам</span>
-                                            <a href="tel:+5323213333">+532 (09) 321 33 33</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                 <div style="padding: 0 0 0 40px;">
+                <!-- Badge -->
+                <span style="display: inline-block; background: rgba(109, 21, 45, 0.1); color: #6D152D; padding: 8px 16px; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 24px;">О компании</span>
+
+                <!-- Main Heading -->
+                <h2 style="font-size: 52px; font-weight: 800; color: #6D152D; margin-bottom: 32px; line-height: 1.1; letter-spacing: -1px;">«ВНЕШПЕРСОНАЛ»</h2>
+
+                <!-- Advantages Section -->
+                <h4 style="font-size: 20px; font-weight: 700; color: #1a1a1a; margin-bottom: 28px;">Преимущества работы с «ВНЕШПЕРСОНАЛ»</h4>
+
+                <ul style="list-style: none; padding: 0; margin-bottom: 36px;">
+                  <li style="margin-bottom: 20px; padding-left: 28px; position: relative; color: #666; line-height: 1.7; font-size: 14px;">
+                    <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 2px; color: #6D152D; font-weight: 700; font-size: 16px;"></i>
+                    <strong style="color: #1a1a1a;">Специализированный персонал</strong>, пользующийся высоким спросом в России: сварщики, слесари, арматурщики, каменщики, операторы производственных и ленточных линий, ЧПУ-станков, электромонтажники, швеи, прядильщики, укладчики-упаковщики, грузчики, расфасовщики и др.
+                  </li>
+                  <li style="margin-bottom: 20px; padding-left: 28px; position: relative; color: #666; line-height: 1.7; font-size: 14px;">
+                    <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 2px; color: #6D152D; font-weight: 700; font-size: 16px;"></i>
+                    <strong style="color: #1a1a1a;">Профессиональная и экономически эффективная</strong> рабочая сила.
+                  </li>
+                  <li style="margin-bottom: 28px; padding-left: 28px; position: relative; color: #666; line-height: 1.7; font-size: 14px;">
+                    <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 2px; color: #6D152D; font-weight: 700; font-size: 16px;"></i>
+                    <strong style="color: #1a1a1a;">Сформированный кадровый резерв</strong>, готовый приступить к работе здесь и сейчас, что сокращает время отбора кандидатов.
+                  </li>
+                </ul>
+
+                <!-- Quote Box -->
+                <div style="background: linear-gradient(135deg, rgba(109, 21, 45, 0.08) 0%, rgba(139, 26, 53, 0.04) 100%); border-left: 5px solid #6D152D; padding: 28px; border-radius: 8px; margin-bottom: 32px; font-style: italic; color: #1a1a1a; font-weight: 500; line-height: 1.8; font-size: 15px;">
+                  <i class="fa-solid fa-quote-left" style="color: #6D152D; opacity: 0.5; margin-right: 10px; font-size: 16px;"></i>
+                  «Мы не просто находим сотрудников — мы становимся вашим надежным партнёром, поставляя слаженные и сработанные коллективы с полной ответственностью на каждом этапе.»
                 </div>
 
-                <img src="assets/images/abstract/arrow-abstract-img-1.svg" alt="arrow-abstract-img-1" width="45" height="116" class="arrow-abstract-1 animate-bottom-to-top" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                <img src="assets/images/abstract/arrow-abstract-img-2.svg" alt="arrow-abstract-img-2" width="115" height="45" class="arrow-abstract-2 animate-right-to-left" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                <!-- CTA Section -->
+                <div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
+                  <a href="#contact" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: linear-gradient(135deg, #6D152D 0%, #8B1A35 100%); color: white; padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 14px; transition: all 0.3s ease; box-shadow: 0 4px 16px rgba(109, 21, 45, 0.2);">
+                    Узнать больше
+                    <i class="fa-solid fa-arrow-right" style="font-size: 12px;"></i>
+                  </a>
+                  <a href="tel:+74994556135" style="display: inline-flex; align-items: center; justify-content: center; background: #6D152D; color: white; padding: 0; border-radius: 50%; width: 56px; height: 56px; text-decoration: none; font-weight: 600; font-size: 15px; transition: all 0.3s ease; box-shadow: 0 4px 16px rgba(109, 21, 45, 0.2);">
+                    <i class="fa-solid fa-phone" style="font-size: 16px;"></i>
+                  </a>
+                  <div>
+                    <p style="margin: 0; color: #999; font-size: 12px; font-weight: 500;">Позвоните нам</p>
+                    <a href="tel:+74994556135" style="color: #6D152D; font-size: 16px; font-weight: 700; text-decoration: none;">+7 499 455 6135</a>
+                  </div>
+                </div>
+              </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
 
+          <img
+            src="assets/images/abstract/arrow-abstract-img-1.svg"
+            alt="arrow-abstract-img-1"
+            width="45"
+            height="116"
+            class="arrow-abstract-1 animate-bottom-to-top"
+            style="
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform: translate(0px, 0px);
+              opacity: 1;
+            "
+          />
+          <img
+            src="assets/images/abstract/arrow-abstract-img-2.svg"
+            alt="arrow-abstract-img-2"
+            width="115"
+            height="45"
+            class="arrow-abstract-2 animate-right-to-left"
+            style="
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform: translate(0px, 0px);
+              opacity: 1;
+            "
+          />
+        </div>
+      </section>
 
-
-
-
-
-        <!-- <div class="section-fun-fact mt-5" style="background-color: #f4f4f4; border-bottom: 4px solid #6D152D;">
+      <!-- <div class="section-fun-fact mt-5" style="background-color: #f4f4f4; border-bottom: 4px solid #6D152D;">
             <div class="section-space">
                 <div class="container">
                     <div class="row justify-content-between g-5">
@@ -527,439 +714,1017 @@
             </div>
         </div> -->
 
-        
-        <section class="section-service p-3 p-lg-0" >
-            <div class="position-relative z-2">
-                <div class="section-space">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-10 col-xl-8 col-xxl-7">
-                                <div class="section-content-block text-center">
-                                    <span class="section-tag is-white">ГЛОБАЛЬНЫЕ РЕШЕНИЯ ДЛЯ РАБОЧЕЙ СИЛЫ</span>
-                                    <h2 class="section-title is-text-dark">Сферы, в которых мы специализируемся </h2>
-                                    <p class="section-text col-lg-10 mx-auto">От привлечения талантов к развертыванию работающих управление, мы привержены предоставлению лучших услуг для обеспечения вашего успеха.</p>
-                                </div>
-                            </div>
-                        </div>
+      <!-- About Company Section Start -->
+      
+      <!-- About Company Section End -->
 
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="position-relative">
-                                    <!-- Slider main container -->
-                                    <div class="service-slider-shadow-fix">
-                                        <div class="service-slider-1 swiper">
-                                            <!-- Additional required wrapper -->
-                                            <div class="swiper-wrapper">
-                                                <!-- Slides -->
-                                                <!-- Service Item -->
-                                                <div class="swiper-slide">
-                                                    <div class="service-item">
-                                                        <div class="service-image-block">
-                                                            <a href="service-details.html" class="service-image-link">
-                                                                <img src="assets/imgs/services-img.jpg"
-                                                                    alt="service-thumbnail-1" width="364" height="266"
-                                                                    class="img-cover service-thumbnail">
-                                                            </a>
-                                                            <div class="service-icon">
-                                                                <img src="assets/images/icons/service-icon-1.svg"
-                                                                    alt="service-icon-1" width="41" height="41">
-                                                                <img src="assets/images/icons/service-icon-hover-1.svg"
-                                                                    alt="service-icon-hover-1" width="41" height="41">
-                                                            </div>
-                                                        </div>
-                                                        <div class="service-content">
-                                                            <a href="service-details.html" class="service-link">Строительство</a>
-                                                            <p class="service-summery">Строительство жилых, коммерческих объектов, дорожно-транспортное и инфраструктурное строительство.</p>
-                                                            <a href="service-details.html"
-                                                                class="btn btn-secondary-outline">
-                                                                Узнать больше
-                                                                <div class="btn-icon btn-icon-sm">
-                                                                    <span>
-                                                                        <i class="fa-regular fa-arrow-right"></i>
-                                                                    </span>
-                                                                    <span>
-                                                                        <i class="fa-regular fa-arrow-right"></i>
-                                                                    </span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Service Item -->
-                                                <!-- Service Item -->
-                                                <div class="swiper-slide">
-                                                    <div class="service-item">
-                                                        <div class="service-image-block">
-                                                            <a href="service-details.html" class="service-image-link">
-                                                                <img src="assets/imgs/services-img.jpg"
-                                                                    alt="service-thumbnail-1" width="364" height="266"
-                                                                    class="img-cover service-thumbnail">
-                                                            </a>
-                                                            <div class="service-icon">
-                                                                <img src="assets/images/icons/service-icon-2.svg"
-                                                                    alt="service-icon-1" width="41" height="41">
-                                                                <img src="assets/images/icons/service-icon-hover-2.svg"
-                                                                    alt="service-icon-hover-1" width="41" height="41">
-                                                            </div>
-                                                        </div>
-                                                        <div class="service-content">
-                                                            <a href="service-details.html" class="service-link">Производство и промышленность </a>
-                                                            <p class="service-summery">Автомобилестроение, пищевая промышленность, металлургия, химическое производство и многое другое – все эти отрасли требуют надёжную, квалифицированную и экономически эффективную рабочую силу. </p>
-                                                            <a href="service-details.html"
-                                                                class="btn btn-secondary-outline">
-                                                                Узнать больше
-                                                                <div class="btn-icon btn-icon-sm">
-                                                                    <span>
-                                                                        <i class="fa-regular fa-arrow-right"></i>
-                                                                    </span>
-                                                                    <span>
-                                                                        <i class="fa-regular fa-arrow-right"></i>
-                                                                    </span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Service Item -->
-                                                <!-- Service Item -->
-                                                <div class="swiper-slide">
-                                                    <div class="service-item">
-                                                        <div class="service-image-block">
-                                                            <a href="service-details.html" class="service-image-link">
-                                                                <img src="assets/imgs/services-img.jpg"
-                                                                    alt="service-thumbnail-3" width="364" height="266"
-                                                                    class="img-cover service-thumbnail">
-                                                            </a>
-                                                            <div class="service-icon">
-                                                                <img src="assets/images/icons/service-icon-3.svg"
-                                                                    alt="service-icon-3" width="41" height="41">
-                                                                <img src="assets/images/icons/service-icon-hover-3.svg"
-                                                                    alt="service-icon-hover-1" width="41" height="41">
-                                                            </div>
-                                                        </div>
-                                                        <div class="service-content">
-                                                            <a href="service-details.html" class="service-link">Гостиничный бизнес и сфера общественного питания </a>
-                                                            <p class="service-summery">Гостиницы, хостелы, санатории, рестораны, салоны красоты, химчистки, ремонтные мастерские – всё, где требуются внимательные и клиентоориентированные работники, способные поддерживать высокие стандарты обслуживания.</p>
-                                                            <a href="service-details.html"
-                                                                class="btn btn-secondary-outline">
-                                                                Узнать больше
-                                                                <div class="btn-icon btn-icon-sm">
-                                                                    <span>
-                                                                        <i class="fa-regular fa-arrow-right"></i>
-                                                                    </span>
-                                                                    <span>
-                                                                        <i class="fa-regular fa-arrow-right"></i>
-                                                                    </span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Service Item -->
-                                                <!-- Service Item -->
-                                                <div class="swiper-slide">
-                                                    <div class="service-item">
-                                                        <div class="service-image-block">
-                                                            <a href="service-details.html" class="service-image-link">
-                                                                <img src="assets/imgs/services-img.jpg"
-                                                                    alt="service-thumbnail-4" width="364" height="266"
-                                                                    class="img-cover service-thumbnail">
-                                                            </a>
-                                                            <div class="service-icon">
-                                                                <img src="assets/images/icons/service-icon-4.svg"
-                                                                    alt="service-icon-4" width="41" height="41">
-                                                                <img src="assets/images/icons/service-icon-hover-4.svg"
-                                                                    alt="service-icon-hover-4" width="41" height="41">
-                                                            </div>
-                                                        </div>
-                                                        <div class="service-content">
-                                                            <a href="service-details.html" class="service-link">Логистика и складское хозяйство</a>
-                                                            <p class="service-summery">Транспортные услуги, упаковка товаров, автоматизация складских процессов</p>
-                                                            <a href="service-details.html"
-                                                                class="btn btn-secondary-outline">
-                                                                Узнать больше
-                                                                <div class="btn-icon btn-icon-sm">
-                                                                    <span>
-                                                                        <i class="fa-regular fa-arrow-right"></i>
-                                                                    </span>
-                                                                    <span>
-                                                                        <i class="fa-regular fa-arrow-right"></i>
-                                                                    </span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Service Item -->
-                                                <!-- Service Item -->
-                                                <div class="swiper-slide">
-                                                    <div class="service-item">
-                                                        <div class="service-image-block">
-                                                            <a href="service-details.html" class="service-image-link">
-                                                                <img src="assets/imgs/services-img.jpg"
-                                                                    alt="service-thumbnail-5" width="364" height="266"
-                                                                    class="img-cover service-thumbnail">
-                                                            </a>
-                                                            <div class="service-icon">
-                                                                <img src="assets/images/icons/service-icon-5.svg"
-                                                                    alt="service-icon-5" width="41" height="41">
-                                                                <img src="assets/images/icons/service-icon-hover-5.svg"
-                                                                    alt="service-icon-hover-5" width="41" height="41">
-                                                            </div>
-                                                        </div>1`
-                                                        <div class="service-content">
-                                                            <a href="service-details.html" class="service-link">Сельское хозяйство </a>
-                                                            <p class="service-summery">Растениеводство и животноводство, фермерские хозяйства</p>
-                                                            <a href="service-details.html"
-                                                                class="btn btn-secondary-outline">
-                                                                Узнать больше
-                                                                <div class="btn-icon btn-icon-sm">
-                                                                    <span>
-                                                                        <i class="fa-regular fa-arrow-right"></i>
-                                                                    </span>
-                                                                    <span>
-                                                                        <i class="fa-regular fa-arrow-right"></i>
-                                                                    </span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Service Item -->
-                                                <!-- Service Item -->
-                                                <div class="swiper-slide">
-                                                    <div class="service-item">
-                                                        <div class="service-image-block">
-                                                            <a href="service-details.html" class="service-image-link">
-                                                                <img src="  assets/imgs/services-img.jpg"
-                                                                    alt="service-thumbnail-6" width="364" height="266"
-                                                                    class="img-cover service-thumbnail">
-                                                            </a>
-                                                            <div class="service-icon">
-                                                                <img src="assets/images/icons/service-icon-6.svg"
-                                                                    alt="service-icon-6" width="41" height="41">
-                                                                <img src="assets/images/icons/service-icon-hover-6.svg"
-                                                                    alt="service-icon-hover-6" width="41" height="41">
-                                                            </div>
-                                                        </div>
-                                                        <div class="service-content">
-                                                            <a href="service-details.html" class="service-link">ИТ и технические специалисты</a>
-                                                            <p class="service-summery">Разработка программного обеспечения, администрирование серверов и сетей, техническая поддержка пользователей.</p>
-                                                            <a href="service-details.html"
-                                                                class="btn btn-secondary-outline">
-                                                                Узнать больше
-                                                                <div class="btn-icon btn-icon-sm">
-                                                                    <span>
-                                                                        <i class="fa-regular fa-arrow-right"></i>
-                                                                    </span>
-                                                                    <span>
-                                                                        <i class="fa-regular fa-arrow-right"></i>
-                                                                    </span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Service Item -->
-                                            </div>
-                                            <!-- If we need navigation buttons -->
-
-                                        </div>
-                                    </div>
-                                    <div class="slider-button-vertical-center">
-                                        <div class="slider-button-style-1 slider-button-prev">
-                                            <i class="fa-regular fa-arrow-left-long"></i>
-                                        </div>
-                                        <div class="slider-button-style-1 slider-button-next">
-                                            <i class="fa-regular fa-arrow-right-long"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <section class="section-service p-3 p-lg-0">
+        <div class="position-relative z-2">
+          <div class="section-space">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8 col-xxl-7">
+                  <div class="section-content-block text-center">
+                    <span class="section-tag is-white"
+                      >ГЛОБАЛЬНЫЕ РЕШЕНИЯ ДЛЯ РАБОЧЕЙ СИЛЫ</span
+                    >
+                    <h2 class="section-title is-text-dark">
+                      Сферы, в которых мы специализируемся
+                    </h2>
+                    <p class="section-text col-lg-10 mx-auto">
+                      От привлечения талантов к развертыванию работающих
+                      управление, мы привержены предоставлению лучших услуг для
+                      обеспечения вашего успеха.
+                    </p>
+                  </div>
                 </div>
-                <div class="service-bg-img"></div>
-            </div>
-        </section>
-        
-        <section class="advantages-section" id="advantages">
-            <style>
-                .advantages-section {
-                    background: #f5f5f5;
-                    padding: 80px 0;
-                }
+              </div>
 
-                .advantages-section .section-space {
-                    padding: 0 !important;
-                }
-
-                .advantages-section .advantage-card {
-                    background: #ffffff;
-                    padding: 30px 25px;
-                    border-radius: 10px;
-                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-                    transition: all 0.3s ease;
-                    border: none;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                }
-
-                .advantages-section .advantage-card:hover {
-                    box-shadow: 0 8px 25px rgba(109, 21, 45, 0.15);
-                    transform: translateY(-5px);
-                }
-
-                .advantages-section .advantage-icon {
-                    width: 70px;
-                    height: 70px;
-                    background: #6D152D;
-                    border-radius: 10px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-bottom: 20px;
-                    flex-shrink: 0;
-                }
-
-                .advantages-section .advantage-icon i {
-                    color: #ffffff;
-                    font-size: 32px;
-                }
-
-                .advantages-section .advantage-card h4 {
-                    color: #1a1a1a;
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 1.4;
-                    margin-bottom: 15px;
-                    text-transform: uppercase;
-                }
-
-                .advantages-section .advantage-card p {
-                    color: #666666;
-                    font-size: 14px;
-                    line-height: 1.7;
-                    margin-bottom: 0;
-                    flex-grow: 1;
-                }
-
-                .advantages-section .section-content-block {
-                    margin-bottom: 50px;
-                }
-
-                .advantages-section .section-tag {
-                    background: #6D152D !important;
-                    color: #fff !important;
-                    padding: 8px 24px !important;
-                    border-radius: 25px !important;
-                    display: inline-block !important;
-                    font-weight: 600 !important;
-                    font-size: 12px !important;
-                    letter-spacing: 0.5px !important;
-                }
-
-                .advantages-section .section-title {
-                    color: #1a1a1a;
-                    font-weight: 700;
-                    font-size: 36px;
-                    margin-top: 15px;
-                }
-
-                .advantages-section .section-text {
-                    color: #666;
-                    font-size: 16px;
-                }
-
-                @media (max-width: 768px) {
-                    .advantages-section {
-                        padding: 50px 0;
-                    }
-
-                    .advantages-section .section-title {
-                        font-size: 28px;
-                    }
-
-                    .advantages-section .advantage-card h4 {
-                        font-size: 14px;
-                    }
-
-                    .advantages-section .advantage-card p {
-                        font-size: 13px;
-                    }
-                }
-            </style>
-
-            <div class="section-space">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-10 col-xl-8">
-                            <div class="section-content-block text-center">
-                                <span class="section-tag">ADVANTAGES OF SUNTECH</span>
-                                <h2 class="section-title">ПРЕИМУЩЕСТВА НАШИХ СОТРУДНИКОВ</h2>
+              <div class="row">
+                <div class="col-12">
+                  <div class="position-relative">
+                    <!-- Slider main container -->
+                    <div class="service-slider-shadow-fix">
+                      <div class="service-slider-1 swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <!-- Service Item -->
+                          <div class="swiper-slide">
+                            <div class="service-item">
+                              <div class="service-image-block">
+                                <a
+                                  href="service-details.html"
+                                  class="service-image-link"
+                                >
+                                  <img
+                                    src="assets/imgs/services-img.jpg"
+                                    alt="service-thumbnail-1"
+                                    width="364"
+                                    height="266"
+                                    class="img-cover service-thumbnail"
+                                  />
+                                </a>
+                                <div class="service-icon">
+                                  <i class="fa-solid fa-building"></i>
+                                </div>
+                              </div>
+                              <div class="service-content">
+                                <a
+                                  href="service-details.html"
+                                  class="service-link"
+                                  >Строительство</a
+                                >
+                                <p class="service-summery">
+                                  Строительство жилых, коммерческих объектов,
+                                  дорожно-транспортное и инфраструктурное
+                                  строительство.
+                                </p>
+                                <a
+                                  href="service-details.html"
+                                  class="btn btn-secondary-outline"
+                                >
+                                  Узнать больше
+                                  <div class="btn-icon btn-icon-sm">
+                                    <span>
+                                      <i class="fa-regular fa-arrow-right"></i>
+                                    </span>
+                                    <span>
+                                      <i class="fa-regular fa-arrow-right"></i>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
                             </div>
+                          </div>
+                          <!-- Service Item -->
+                          <!-- Service Item -->
+                          <div class="swiper-slide">
+                            <div class="service-item">
+                              <div class="service-image-block">
+                                <a
+                                  href="service-details.html"
+                                  class="service-image-link"
+                                >
+                                  <img
+                                    src="assets/imgs/services-img.jpg"
+                                    alt="service-thumbnail-1"
+                                    width="364"
+                                    height="266"
+                                    class="img-cover service-thumbnail"
+                                  />
+                                </a>
+                                <div class="service-icon">
+                                  <i class="fa-solid fa-industry"></i>
+                                </div>
+                              </div>
+                              <div class="service-content">
+                                <a
+                                  href="service-details.html"
+                                  class="service-link"
+                                  >Производство и промышленность
+                                </a>
+                                <p class="service-summery">
+                                  Автомобилестроение, пищевая промышленность,
+                                  металлургия, химическое производство и многое
+                                  другое – все эти отрасли требуют надёжную,
+                                  квалифицированную и экономически эффективную
+                                  рабочую силу.
+                                </p>
+                                <a
+                                  href="service-details.html"
+                                  class="btn btn-secondary-outline"
+                                >
+                                  Узнать больше
+                                  <div class="btn-icon btn-icon-sm">
+                                    <span>
+                                      <i class="fa-regular fa-arrow-right"></i>
+                                    </span>
+                                    <span>
+                                      <i class="fa-regular fa-arrow-right"></i>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Service Item -->
+                          <!-- Service Item -->
+                          <div class="swiper-slide">
+                            <div class="service-item">
+                              <div class="service-image-block">
+                                <a
+                                  href="service-details.html"
+                                  class="service-image-link"
+                                >
+                                  <img
+                                    src="assets/imgs/services-img.jpg"
+                                    alt="service-thumbnail-3"
+                                    width="364"
+                                    height="266"
+                                    class="img-cover service-thumbnail"
+                                  />
+                                </a>
+                                <div class="service-icon">
+                                  <i class="fa-solid fa-utensils"></i>
+                                </div>
+                              </div>
+                              <div class="service-content">
+                                <a
+                                  href="service-details.html"
+                                  class="service-link"
+                                  >Гостиничный бизнес и сфера общественного
+                                  питания
+                                </a>
+                                <p class="service-summery">
+                                  Гостиницы, хостелы, санатории, рестораны,
+                                  салоны красоты, химчистки, ремонтные
+                                  мастерские – всё, где требуются внимательные и
+                                  клиентоориентированные работники, способные
+                                  поддерживать высокие стандарты обслуживания.
+                                </p>
+                                <a
+                                  href="service-details.html"
+                                  class="btn btn-secondary-outline"
+                                >
+                                  Узнать больше
+                                  <div class="btn-icon btn-icon-sm">
+                                    <span>
+                                      <i class="fa-regular fa-arrow-right"></i>
+                                    </span>
+                                    <span>
+                                      <i class="fa-regular fa-arrow-right"></i>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Service Item -->
+                          <!-- Service Item -->
+                          <div class="swiper-slide">
+                            <div class="service-item">
+                              <div class="service-image-block">
+                                <a
+                                  href="service-details.html"
+                                  class="service-image-link"
+                                >
+                                  <img
+                                    src="assets/imgs/services-img.jpg"
+                                    alt="service-thumbnail-4"
+                                    width="364"
+                                    height="266"
+                                    class="img-cover service-thumbnail"
+                                  />
+                                </a>
+                                <div class="service-icon">
+                                  <i class="fa-solid fa-truck"></i>
+                                </div>
+                              </div>
+                              <div class="service-content">
+                                <a
+                                  href="service-details.html"
+                                  class="service-link"
+                                  >Логистика и складское хозяйство</a
+                                >
+                                <p class="service-summery">
+                                  Транспортные услуги, упаковка товаров,
+                                  автоматизация складских процессов
+                                </p>
+                                <a
+                                  href="service-details.html"
+                                  class="btn btn-secondary-outline"
+                                >
+                                  Узнать больше
+                                  <div class="btn-icon btn-icon-sm">
+                                    <span>
+                                      <i class="fa-regular fa-arrow-right"></i>
+                                    </span>
+                                    <span>
+                                      <i class="fa-regular fa-arrow-right"></i>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Service Item -->
+                          <!-- Service Item -->
+                          <div class="swiper-slide">
+                            <div class="service-item">
+                              <div class="service-image-block">
+                                <a
+                                  href="service-details.html"
+                                  class="service-image-link"
+                                >
+                                  <img
+                                    src="assets/imgs/services-img.jpg"
+                                    alt="service-thumbnail-5"
+                                    width="364"
+                                    height="266"
+                                    class="img-cover service-thumbnail"
+                                  />
+                                </a>
+                                <div class="service-icon">
+                                  <i class="fa-solid fa-leaf"></i>
+                                </div>
+                              </div>
+                              <div class="service-content">
+                                <a
+                                  href="service-details.html"
+                                  class="service-link"
+                                  >Сельское хозяйство
+                                </a>
+                                <p class="service-summery">
+                                  Растениеводство и животноводство, фермерские
+                                  хозяйства
+                                </p>
+                                <a
+                                  href="service-details.html"
+                                  class="btn btn-secondary-outline"
+                                >
+                                  Узнать больше
+                                  <div class="btn-icon btn-icon-sm">
+                                    <span>
+                                      <i class="fa-regular fa-arrow-right"></i>
+                                    </span>
+                                    <span>
+                                      <i class="fa-regular fa-arrow-right"></i>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Service Item -->
+                          <!-- Service Item -->
+                          <div class="swiper-slide">
+                            <div class="service-item">
+                              <div class="service-image-block">
+                                <a
+                                  href="service-details.html"
+                                  class="service-image-link"
+                                >
+                                  <img
+                                    src="assets/imgs/services-img.jpg"
+                                    alt="service-thumbnail-6"
+                                    width="364"
+                                    height="266"
+                                    class="img-cover service-thumbnail"
+                                  />
+                                </a>
+                                <div class="service-icon">
+                                  <i class="fa-solid fa-code"></i>
+                                </div>
+                              </div>
+                              <div class="service-content">
+                                <a
+                                  href="service-details.html"
+                                  class="service-link"
+                                  >Искусственные технологии и технические специалисты</a
+                                >
+                                <p class="service-summery">
+                                  Разработка программного обеспечения,
+                                  администрирование серверов и сетей,
+                                  техническая поддержка пользователей.
+                                </p>
+                                <a
+                                  href="service-details.html"
+                                  class="btn btn-secondary-outline"
+                                >
+                                  Узнать больше
+                                  <div class="btn-icon btn-icon-sm">
+                                    <span>
+                                      <i class="fa-regular fa-arrow-right"></i>
+                                    </span>
+                                    <span>
+                                      <i class="fa-regular fa-arrow-right"></i>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Service Item -->
                         </div>
+                        <!-- If we need navigation buttons -->
+                      </div>
                     </div>
-
-                    <div class="row g-4">
-                        <!-- Advantage Item 1 -->
-                        <div class="col-lg-6 col-xl-3">
-                            <div class="advantage-card">
-                                <div class="advantage-icon">
-                                    <i class="fa-solid fa-chart-line"></i>
-                                </div>
-                                <h4>- ДИСЦИПЛИНА И НАДЁЖНОСТЬ</h4>
-                                <p>Рабочие из Индии, Непала, Шри-Ланки и Бангладеш имеют опыт участия в масштабных проектах, ценятся за адаптивность и готовность к сверхурочной работе, за физическую выносливость и способность работать посменно, включая ночные смены и выходные дни.</p>
-                            </div>
-                        </div>
-
-                        <!-- Advantage Item 2 -->
-                        <div class="col-lg-6 col-xl-3">
-                            <div class="advantage-card">
-                                <div class="advantage-icon">
-                                    <i class="fa-solid fa-users-between-lines"></i>
-                                </div>
-                                <h4>- ВЫСОКАЯ КВАЛИФИКАЦИЯ, ПРОВЕРЕННАЯ ВРЕМЕНЕМ</h4>
-                                <p>ИТ-специалисты из Индии имеют международное признание благодаря сильным техническим навыкам и высокому владению английским языком.</p>
-                            </div>
-                        </div>
-
-                        <!-- Advantage Item 3 -->
-                        <div class="col-lg-6 col-xl-3">
-                            <div class="advantage-card">
-                                <div class="advantage-icon">
-                                    <i class="fa-solid fa-globe"></i>
-                                </div>
-                                <h4>- СЕРВИСНАЯ КУЛЬТУРА</h4>
-                                <p>В Шри-Ланке и Индии существуют развитые системы профессиональной подготовки в сфере сервиса и туризма, дающие специалистов, обученных международным стандартам. Работники отличаются вежливостью, внимательностью и способностью сохранять самообладание при высокой нагрузке.</p>
-                            </div>
-                        </div>
-
-                        <!-- Advantage Item 4 -->
-                        <div class="col-lg-6 col-xl-3">
-                            <div class="advantage-card">
-                                <div class="advantage-icon">
-                                    <i class="fa-solid fa-gauge-high"></i>
-                                </div>
-                                <h4>- РЕЛЕВАНТНЫЙ ОПЫТ</h4>
-                                <p>Работники – выходцы из сельскохозяйственных семей. Они хорошо адаптированы к физическим нагрузкам и обладают глубоким пониманием циклов выращивания культур, систем орошения и управления земельными ресурсами.</p>
-                            </div>
-                        </div>
+                    <div class="slider-button-vertical-center">
+                      <div class="slider-button-style-1 slider-button-prev">
+                        <i class="fa-regular fa-arrow-left-long"></i>
+                      </div>
+                      <div class="slider-button-style-1 slider-button-next">
+                        <i class="fa-regular fa-arrow-right-long"></i>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-        <!-- ...::: Section Advantages End :::... -->
+          </div>
+          <div class="service-bg-img"></div>
+        </div>
+      </section>
 
- <!-- ...::: Section Client Slider Start :::... -->
-        <!-- <div class="section-client-slider">
-            <div class="space-x-128">
+      <!-- ...::: Section Recruitment Process End :::... -->
+
+      <!-- ...::: Section Service Culture Start :::... -->
+      
+
+      <section class="working-process-section-3 section-space fix">
+        <div class="shape-1">
+          <img src="assets/images/home-3/shape-1.png" alt="img" />
+        </div>
+        <div class="shape-2">
+          <img src="assets/images/home-3/shape-2.png" alt="img" />
+        </div>
+        <style>
+          .working-process-section-3 .process-grid .col-12 {
+            display: flex;
+          }
+
+          .working-process-section-3
+            .process-grid
+            .working-process-box-items-3 {
+            height: 100%;
+            background: #ffffff;
+            padding: 32px 24px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(109, 21, 45, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: visible;
+          }
+
+          .working-process-section-3
+            .process-grid
+            .col-12:nth-child(1)
+            .working-process-box-items-3::before {
+            content: "01";
+          }
+          .working-process-section-3
+            .process-grid
+            .col-12:nth-child(2)
+            .working-process-box-items-3::before {
+            content: "02";
+          }
+          .working-process-section-3
+            .process-grid
+            .col-12:nth-child(3)
+            .working-process-box-items-3::before {
+            content: "03";
+          }
+          .working-process-section-3
+            .process-grid
+            .col-12:nth-child(4)
+            .working-process-box-items-3::before {
+            content: "04";
+          }
+
+          .working-process-section-3
+            .process-grid
+            .working-process-box-items-3::before {
+            position: absolute;
+            right: -1px;
+            bottom: 0;
+            font-size: 106px;
+            font-weight: 900;
+            line-height: 1;
+            font-family: "Raleway", sans-serif;
+            z-index: 0;
+            -webkit-text-stroke: 2px rgba(109, 21, 45, 0.1);
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+          }
+
+          .working-process-section-3
+            .process-grid
+            .working-process-box-items-3:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 48px rgba(109, 21, 45, 0.15);
+          }
+
+          .working-process-section-3 .process-grid .working-process-icon-box {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 2;
+          }
+
+          .working-process-section-3
+            .process-grid
+            .working-process-box-items-3
+            .working-process-icon-box
+            .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            background: radial-gradient(
+              133.22% 120.44% at 100.88% 22.84%,
+              #8b1a35 0%,
+              #6d152d 50%,
+              #4a0e1f 100%
+            );
+            flex-shrink: 0;
+          }
+
+          .working-process-section-3
+            .process-grid
+            .working-process-box-items-3
+            .working-process-icon-box
+            .icon
+            i {
+            color: #fff;
+            font-size: 28px;
+            line-height: 1;
+          }
+
+          .working-process-section-3
+            .process-grid
+            .working-process-box-items-3
+            .working-process-icon-box
+            h4 {
+            font-size: 13px;
+            font-weight: 600;
+            color: #6d152d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 4px 0 0 0;
+            font-family: "DM Sans", sans-serif;
+          }
+
+          .working-process-section-3
+            .process-grid
+            .working-process-box-items-3
+            h3 {
+            font-size: 19px;
+            font-weight: 700;
+            color: #1a1e25;
+            margin: 0 0 10px 0;
+            line-height: 1.3;
+            position: relative;
+            z-index: 2;
+          }
+
+          .working-process-section-3
+            .process-grid
+            .working-process-box-items-3
+            p {
+            font-size: 14px;
+            color: #5c6672;
+            margin: 0;
+            line-height: 1.6;
+            position: relative;
+            z-index: 2;
+          }
+
+          @media (max-width: 767px) {
+            .working-process-section-3
+              .process-grid
+              .working-process-box-items-3 {
+              padding: 24px 18px;
+            }
+
+            .working-process-section-3
+              .process-grid
+              .working-process-box-items-3::before {
+              font-size: 160px;
+              top: -40px;
+              right: -35px;
+            }
+
+            .working-process-section-3
+              .process-grid
+              .working-process-box-items-3
+              h3 {
+              font-size: 17px;
+            }
+
+            .working-process-section-3
+              .process-grid
+              .working-process-box-items-3
+              .working-process-icon-box {
+              margin-bottom: 12px;
+            }
+
+            .working-process-section-3
+              .process-grid
+              .working-process-box-items-3
+              .working-process-icon-box
+              .icon {
+              width: 50px;
+              height: 50px;
+            }
+
+            .working-process-section-3
+              .process-grid
+              .working-process-box-items-3
+              .working-process-icon-box
+              .icon
+              i {
+              font-size: 24px;
+            }
+          }
+        </style>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8 col-xxl-7">
+              <div class="section-content-block text-center">
+                <span class="section-tag wow fadeInUp" data-wow-duration="1.2s"
+                  >ПРОЦЕСС ПОДБОРА</span
+                >
+                <h2 class="section-title is-text-dark">
+                  Подбор персонала
+                </h2>
+                <p
+                  class="section-text col-lg-10 mx-auto wow fadeInUp"
+                  data-wow-delay=".2s"
+                  data-wow-duration="1.3s"
+                >
+                  Что входит в наше комплексное сопровождение:
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row gy-5 gx-4 mt-2 process-grid">
+            <div
+              class="col-12 col-md-6 col-xl-3 wow fadeInUp"
+              data-wow-delay=".1s"
+            >
+              <div class="working-process-box-items-3" data-number="01">
+                <div class="working-process-icon-box">
+                  <div class="icon">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                  </div>
+                  <div>
+                    <h3>Проведение профессионального отбора</h3>
+                  </div>
+                </div>
+                <p>
+                  После заполнения анкеты мы в короткие сроки находим нужных специалистов и проводим тестирование кандидатов, опираясь на ваши пожелания.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-xl-3 wow fadeInUp"
+              data-wow-delay=".2s"
+            >
+              <div class="working-process-box-items-3" data-number="02">
+                <div class="working-process-icon-box">
+                  <div class="icon"><i class="fa-solid fa-stethoscope"></i></div>
+                  <div>
+                    <h3>Собеседования и медобследование</h3>
+                  </div>
+                </div>
+                <p>Вы изучаете анкеты кандидатов и по желанию проводите собеседования с ними, после чего специалисты проходят полную проверку здоровья в лицензированных медицинских учреждениях до выезда в Россию.</p>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-xl-3 wow fadeInUp"
+              data-wow-delay=".3s"
+            >
+              <div class="working-process-box-items-3" data-number="03">
+                <div class="working-process-icon-box">
+                  <div class="icon"><i class="fa-solid fa-file-contract"></i></div>
+                  <div>
+                    <h3>Оформление документов и переезд</h3>
+                  </div>
+                </div>
+                <p>
+                  Мы берем на себя подготовку всех необходимых документов для легализация работников в России: приглашения, визы, разрешения на работу, и иных документов в государственных органах, а также проведение предвыездного инструктажа. После этого кандидаты прибывают на рабочее место в установленные сроки.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-xl-3 wow fadeInUp"
+              data-wow-delay=".4s"
+            >
+              <div class="working-process-box-items-3" data-number="04">
+                <div class="working-process-icon-box">
+                  <div class="icon"><i class="fa-solid fa-headset"></i></div>
+                  <div>
+                    <h3>Постоянное сопровождение</h3>
+                  </div>
+                </div>
+                <p>
+                  Наше взаимодействие не останавливается на трудоустройстве. Мы занимаемся продлением и переоформлением виз, помогаем в репатриации при необходимости. Сотрудники приступают к работе – а мы остаёмся на связи.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ...::: Section Employee Advantages Start :::... -->
+      <section class="employee-advantages-section section-space">
+        <style>
+          .employee-advantages-section {
+            background: linear-gradient(135deg, #f9f9f9 0%, #fff 100%);
+            position: relative;
+          }
+
+          .employee-advantages-section .section-content-block {
+            margin-bottom: 60px;
+          }
+
+          .employee-advantages-section .section-tag {
+            background: #6d152d !important;
+            color: #fff !important;
+            padding: 8px 24px !important;
+            border-radius: 25px !important;
+            display: inline-block !important;
+            font-weight: 600 !important;
+            font-size: 12px !important;
+            letter-spacing: 0.5px !important;
+          }
+
+          .employee-advantages-section .section-title {
+            color: #1a1a1a;
+            font-weight: 700;
+            font-size: 36px;
+            margin-top: 15px;
+          }
+
+          .employee-advantages-section .advantage-item {
+            background: #fff;
+            padding: 40px 32px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(109, 21, 45, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-left: 5px solid #6d152d;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+          }
+
+          .employee-advantages-section .advantage-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(109, 21, 45, 0.15);
+          }
+
+          .employee-advantages-section .advantage-item-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #8b1a35 0%, #6d152d 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 36px;
+            color: #fff;
+          }
+
+          .employee-advantages-section .advantage-item h3 {
+            color: #1a1a1a;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-family: "Raleway", sans-serif;
+          }
+
+          .employee-advantages-section .advantage-item p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.7;
+            margin: 0;
+            flex-grow: 1;
+          }
+
+          .employee-advantages-section .advantage-item ul {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.8;
+            margin: 10px 0 0 0;
+            padding-left: 20px;
+          }
+
+          .employee-advantages-section .advantage-item li {
+            margin-bottom: 8px;
+          }
+
+          @media (max-width: 768px) {
+            .employee-advantages-section {
+              padding: 50px 0;
+            }
+
+            .employee-advantages-section .section-title {
+              font-size: 28px;
+            }
+
+            .employee-advantages-section .advantage-item {
+              padding: 30px 24px;
+            }
+
+            .employee-advantages-section .advantage-item h3 {
+              font-size: 18px;
+            }
+
+            .employee-advantages-section .advantage-item p,
+            .employee-advantages-section .advantage-item ul {
+              font-size: 14px;
+            }
+          }
+        </style>
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+              <div class="section-content-block text-center">
+                <span class="section-tag wow fadeInUp" data-wow-duration="1.2s">НАШЕ ПРЕИМУЩЕСТВО</span>
+                <h2 class="section-title is-text-dark wow fadeInUp" data-wow-delay=".1s">
+                  Преимущества наших сотрудников
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row gy-4 gx-4">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay=".2s">
+              <div class="advantage-item">
+                <div class="advantage-item-icon">
+                  <i class="fa-solid fa-shield-check"></i>
+                </div>
+                <h3>Дисциплина и надёжность</h3>
+                <p>
+                  Они ценятся за адаптивность и готовность к сверхурочной работе, за физическую выносливость и способность работать посменно, включая ночное время и выходные дни. Наши сотрудники показывают высокий уровень ответственности и пунктуальности в выполнении рабочих обязанностей.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+              <div class="advantage-item">
+                <div class="advantage-item-icon">
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>Высокая квалификация и практический опыт</h3>
+                <p>
+                  Большинство наших сотрудников уже владеют практическими навыками, поскольку выросли в среде, связанной с их профессией. Они имеют опыт работы на сложном оборудовании: ЧПУ, конвейеры, сварочные посты, швейные линии.
+                </p>
+                <p style="margin-top: 12px;">
+                  Наши специалисты успешно участвовали в реализации престижных международных проектов, включая: Бурдж-Халифа, Феррари-Уорлд, остров Яс, Гранд Мечеть шейха Зайеда и Чемпионата мира по футболу FIFA 2022.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ...::: Section Employee Advantages End :::... -->
+
+      <!-- ...::: Section Service Culture Start :::... -->
+      <section class="service-culture-section section-space">
+        <style>
+          .service-culture-section {
+            background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+            position: relative;
+            overflow: hidden;
+          }
+
+          .service-culture-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(109, 21, 45, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+          }
+
+          .service-culture-section .section-content-block {
+            margin-bottom: 60px;
+            position: relative;
+            z-index: 2;
+          }
+
+          .service-culture-section .section-tag {
+            background: #6d152d !important;
+            color: #fff !important;
+            padding: 8px 24px !important;
+            border-radius: 25px !important;
+            display: inline-block !important;
+            font-weight: 600 !important;
+            font-size: 12px !important;
+            letter-spacing: 0.5px !important;
+          }
+
+          .service-culture-section .section-title {
+            color: #1a1a1a;
+            font-weight: 700;
+            font-size: 36px;
+            margin-top: 15px;
+          }
+
+
+          .service-culture-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            position: relative;
+            z-index: 2;
+          }
+
+          .service-culture-card {
+            background: #fff;
+            padding: 40px 35px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(109, 21, 45, 0.12);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(109, 21, 45, 0.08);
+            position: relative;
+            overflow: hidden;
+          }
+
+          .service-culture-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #6d152d 0%, #8b1a35 100%);
+          }
+
+          .service-culture-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 16px 48px rgba(109, 21, 45, 0.18);
+          }
+
+          .service-culture-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #8b1a35 0%, #6d152d 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            font-size: 40px;
+            color: #fff;
+            transition: all 0.3s ease;
+          }
+
+          .service-culture-card:hover .service-culture-icon {
+            transform: scale(1.1) rotate(5deg);
+          }
+
+          .service-culture-card h3 {
+            color: #1a1a1a;
+            font-weight: 700;
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-family: "Raleway", sans-serif;
+          }
+
+          .service-culture-card p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.8;
+            margin: 0;
+          }
+
+          @media (max-width: 768px) {
+            .service-culture-section {
+              padding: 50px 0;
+            }
+
+            .service-culture-section::before {
+              width: 400px;
+              height: 400px;
+              top: -30%;
+              right: -20%;
+            }
+
+            .service-culture-section .section-title {
+              font-size: 28px;
+            }
+
+            .service-culture-cards {
+              grid-template-columns: 1fr;
+              gap: 20px;
+            }
+
+            .service-culture-card {
+              padding: 30px 25px;
+            }
+
+            .service-culture-card h3 {
+              font-size: 20px;
+            }
+
+            .service-culture-card p {
+              font-size: 14px;
+            }
+          }
+        </style>
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+              <div class="section-content-block text-center">
+                <span class="section-tag wow fadeInUp" data-wow-duration="1.2s">СЕРВИС КУЛЬТУРА</span>
+                <h2 class="section-title is-text-dark wow fadeInUp" data-wow-delay=".1s">
+                  Сервисная культура
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-culture-cards">
+            <div class="service-culture-card wow fadeInUp" data-wow-delay=".2s">
+              <div class="service-culture-icon">
+                <i class="fa-solid fa-book"></i>
+              </div>
+              <h3>Профессиональная подготовка</h3>
+              <p>
+                В Индии и Шри-Ланке существуют развитые системы профессиональной подготовки в сфере сервиса и туризма, дающие специалистов, обученных международным стандартам.
+              </p>
+            </div>
+
+            <div class="service-culture-card wow fadeInUp" data-wow-delay=".3s">
+              <div class="service-culture-icon">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h3>Качество обслуживания</h3>
+              <p>
+                Все наши сотрудники отличаются внимательностью и способностью сохранять самообладание при высокой нагрузке. Они обладают опытом предоставления услуг на высоком уровне.
+              </p>
+            </div>
+
+            <div class="service-culture-card wow fadeInUp" data-wow-delay=".4s">
+              <div class="service-culture-icon">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <h3>Мультикультурный опыт</h3>
+              <p>
+                Наши сотрудники готовы адаптироваться к различным требованиям клиентов и работают в мультикультурной среде, что гарантирует профессионализм в любых условиях.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ...::: Section Service Culture End :::... -->
+
+        <div class="container section-client-slider mb-5">
+            <div class="">
                 <div class="client-slider-style-1">
-                    <div class="container-fluid">
+                    <div class="container">
                         <div class="row align-items-center">
                             <div class="col-xl-3 col-xxl-2">
-                                <h4 class="mb-4 mb-xl-0">Global Servicing Around the World</h4>
+                                <h4 class="mb-4 mb-xl-0">Наши клиенты </h4>
                             </div>
                             <div class="col-xl-9 col-xxl-10">
                                
@@ -968,73 +1733,183 @@
                                     <div class="swiper-wrapper align-items-center">
                                     
                                         <div class="swiper-slide">
-                                            <img src="assets/images/client-logo-1.png" alt="client-logo-1" width="153"
-                                                height="38" class="img-fluid">
-
+                                            <img src="assets/imgs/client-logo/suntech-logo.jpg" alt="suntech-logo" class="img-fluid client-logo-img">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="assets/images/client-logo-2.png" alt="client-logo-2" width="135"
-                                                height="30" class="img-fluid">
-
+                                            <img src="assets/imgs/client-logo/acc-logo.jpg" alt="acc-logo" class="img-fluid client-logo-img">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="assets/images/client-logo-3.png" alt="client-logo-3" width="129"
-                                                height="34" class="img-fluid">
-
+                                            <img src="assets/imgs/client-logo/access-and-coating-group-abu-dhabi.jpg" alt="access-and-coating" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/adnan-contracting-co-logo.jpg" alt="adnan-contracting" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/al-karim-jharomi.jpg" alt="al-karim-jharomi" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/al-nasr-engineering-logo (1).jpg" alt="al-nasr-engineering" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/aljazeera-logo.jpg" alt="aljazeera-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/alnasr-logo.jpg" alt="alnasr-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/alsa-apollo-kitchen-logo.jpg" alt="alsa-apollo-kitchen" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/arab-contractors.jpg" alt="arab-contractors" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/atlas-transport-logo.jpg" alt="atlas-transport" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/avenue-address-logo.jpg" alt="avenue-address" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/bauer-logo.jpg" alt="bauer-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/bin-hame-group-logo.jpg" alt="bin-hame-group" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/como-facilities-services-logo.jpg" alt="como-facilities" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/comodore-contracting-co-logo.jpg" alt="comodore-contracting" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/conversion-logo.jpg" alt="conversion-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/deyaar-logo.jpg" alt="deyaar-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/dhabi-contractor-logo.jpg" alt="dhabi-contractor" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/drydocks-world-logo.jpg" alt="drydocks-world" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/dussman.jpg" alt="dussman" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/eagle-electromechanical-logo.jpg" alt="eagle-electromechanical" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/emdad-logo.jpg" alt="emdad-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/emirates-international-logo.jpg" alt="emirates-international" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/expert-international-logo.jpg" alt="expert-international" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/fiberx-logo.jpg" alt="fiberx-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/fino-international-logo.jpg" alt="fino-international" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/FNCT-logo.jpg" alt="FNCT-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/force-10-logo.jpg" alt="force-10-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/gbh-logo.jpg" alt="gbh-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/ghantoot-logo.jpg" alt="ghantoot-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/lahoud-logo.jpg" alt="lahoud-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/mhol-logo.jpg" alt="mhol-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/nadan-logo.jpg" alt="nadan-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/namariq-arabian-services-co-ltd.jpg" alt="namariq-arabian" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/ncs-logo.jpg" alt="ncs-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/nft-logo.jpg" alt="nft-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/npcc-logo.jpg" alt="npcc-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/pic-logo.jpg" alt="pic-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/point-contracting.jpg" alt="point-contracting" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/proclad-logo.jpg" alt="proclad-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/proscape-logo.jpg" alt="proscape-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/reach-logo.jpg" alt="reach-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/saari-oil-fields.jpg" alt="saari-oil-fields" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/sarooj-logo.jpg" alt="sarooj-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/saroojaa-logo.jpg" alt="saroojaa-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/sigma-logo.jpg" alt="sigma-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/silver-coast-logo.jpg" alt="silver-coast-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/ss-lootah-ready-mix.jpg" alt="ss-lootah-ready-mix" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/stallion-logo.jpg" alt="stallion-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/strong-walls-construction.jpg" alt="strong-walls-construction" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/tadweer-logo.jpg" alt="tadweer-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/team-logo.jpg" alt="team-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/ucc-logo.jpg" alt="ucc-logo" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/united-master-electro-mechanical.jpg" alt="united-master-electro-mechanical" class="img-fluid client-logo-img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/imgs/client-logo/venture-gulf-log.jpg" alt="venture-gulf-log" class="img-fluid client-logo-img">
                                         </div>
                                         
+                                        <!-- Repeat first few for smooth looping -->
                                         <div class="swiper-slide">
-                                            <img src="assets/images/client-logo-4.png" alt="client-logo-4" width="142"
-                                                height="30" class="img-fluid">
-
+                                            <img src="assets/imgs/client-logo/suntech-logo.jpg" alt="suntech-logo" class="img-fluid client-logo-img">
                                         </div>
-                                        
                                         <div class="swiper-slide">
-                                            <img src="assets/images/client-logo-5.png" alt="client-logo-5" width="137"
-                                                height="48" class="img-fluid">
-
+                                            <img src="assets/imgs/client-logo/acc-logo.jpg" alt="acc-logo" class="img-fluid client-logo-img">
                                         </div>
-                                        
                                         <div class="swiper-slide">
-                                            <img src="assets/images/client-logo-6.png" alt="client-logo-6" width="123"
-                                                height="29" class="img-fluid">
-
-                                        </div>
-                                        
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/client-logo-1.png" alt="client-logo-1" width="153"
-                                                height="38" class="img-fluid">
-
-                                        </div>
-                                        
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/client-logo-2.png" alt="client-logo-2" width="135"
-                                                height="30" class="img-fluid">
-
-                                        </div>
-                                        
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/client-logo-3.png" alt="client-logo-3" width="129"
-                                                height="34" class="img-fluid">
-
-                                        </div>
-                                        
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/client-logo-4.png" alt="client-logo-4" width="142"
-                                                height="30" class="img-fluid">
-
-                                        </div>
-                                        
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/client-logo-5.png" alt="client-logo-5" width="137"
-                                                height="48" class="img-fluid">
-
-                                        </div>
-                                        
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/client-logo-6.png" alt="client-logo-6" width="123"
-                                                height="29" class="img-fluid">
-
+                                            <img src="assets/imgs/client-logo/access-and-coating-group-abu-dhabi.jpg" alt="access-and-coating" class="img-fluid client-logo-img">
                                         </div>
                                      
                                     </div>
@@ -1045,436 +1920,233 @@
                     </div>
                 </div>
             </div>
-        </div> -->
-        <!-- ...::: Section Client Slider End :::... -->
+        </div> 
 
-
-    
-
-
-     <section class="working-process-section-3 section-space fix">
-                <div class="shape-1">
-                    <img src="assets/images/home-3/shape-1.png" alt="img">
-                </div>
-                 <div class="shape-2">
-                    <img src="assets/images/home-3/shape-2.png" alt="img">
-                </div>
-                <style>
-                    .working-process-section-3 .process-grid .col-12 {
-                        display: flex;
-                    }
-
-                    .working-process-section-3 .process-grid .working-process-box-items-3 {
-                        height: 100%;
-                        background: #ffffff;
-                        padding: 32px 24px;
-                        border-radius: 12px;
-                        box-shadow: 0 8px 32px rgba(109, 21, 45, 0.08);
-                        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-                        display: flex;
-                        flex-direction: column;
-                        position: relative;
-                        overflow: visible;
-                    }
-
-                    .working-process-section-3 .process-grid .col-12:nth-child(1) .working-process-box-items-3::before {
-                        content: "01";
-                    }
-                    .working-process-section-3 .process-grid .col-12:nth-child(2) .working-process-box-items-3::before {
-                        content: "02";
-                    }
-                    .working-process-section-3 .process-grid .col-12:nth-child(3) .working-process-box-items-3::before {
-                        content: "03";
-                    }
-                    .working-process-section-3 .process-grid .col-12:nth-child(4) .working-process-box-items-3::before {
-                        content: "04";
-                    }
-                    .working-process-section-3 .process-grid .col-12:nth-child(5) .working-process-box-items-3::before {
-                        content: "05";
-                    }
-                    .working-process-section-3 .process-grid .col-12:nth-child(6) .working-process-box-items-3::before {
-                        content: "06";
-                    }
-                    .working-process-section-3 .process-grid .col-12:nth-child(7) .working-process-box-items-3::before {
-                        content: "07";
-                    }
-                    .working-process-section-3 .process-grid .col-12:nth-child(8) .working-process-box-items-3::before {
-                        content: "08";
-                    }
-
-                    .working-process-section-3 .process-grid .working-process-box-items-3::before {
-                        position: absolute;
-                           right: -1px;
-                         bottom: 0;
-                        font-size: 106px;
-                        font-weight: 900;
-                        line-height: 1;
-                        font-family: 'Raleway', sans-serif;
-                        z-index: 0;
-                        -webkit-text-stroke: 2px rgba(109, 21, 45, 0.1);
-                        -webkit-text-fill-color: transparent;
-                        color: transparent;
-                    }
-
-                    .working-process-section-3 .process-grid .working-process-box-items-3:hover {
-                        transform: translateY(-8px);
-                        box-shadow: 0 16px 48px rgba(109, 21, 45, 0.15);
-                    }
-
-                    .working-process-section-3 .process-grid .working-process-icon-box {
-                        display: flex;
-                        align-items: flex-start;
-                        gap: 16px;
-                        margin-bottom: 16px;
-                        position: relative;
-                        z-index: 2;
-                    }
-
-                    .working-process-section-3 .process-grid .working-process-box-items-3 .working-process-icon-box .icon {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 60px;
-                        height: 60px;
-                        border-radius: 12px;
-                        background: radial-gradient(133.22% 120.44% at 100.88% 22.84%, #8B1A35 0%, #6D152D 50%, #4a0e1f 100%);
-                        flex-shrink: 0;
-                    }
-
-                    .working-process-section-3 .process-grid .working-process-box-items-3 .working-process-icon-box .icon i {
-                        color: #fff;
-                        font-size: 28px;
-                        line-height: 1;
-                    }
-
-                    .working-process-section-3 .process-grid .working-process-box-items-3 .working-process-icon-box h4 {
-                        font-size: 13px;
-                        font-weight: 600;
-                        color: #6D152D;
-                        text-transform: uppercase;
-                        letter-spacing: 0.5px;
-                        margin: 4px 0 0 0;
-                        font-family: 'DM Sans', sans-serif;
-                    }
-
-                    .working-process-section-3 .process-grid .working-process-box-items-3 h3 {
-                        font-size: 19px;
-                        font-weight: 700;
-                        color: #1a1e25;
-                        margin: 0 0 10px 0;
-                        line-height: 1.3;
-                        position: relative;
-                        z-index: 2;
-                    }
-
-                    .working-process-section-3 .process-grid .working-process-box-items-3 p {
-                        font-size: 14px;
-                        color: #5C6672;
-                        margin: 0;
-                        line-height: 1.6;
-                        position: relative;
-                        z-index: 2;
-                    }
-
-                    @media (max-width: 767px) {
-                        .working-process-section-3 .process-grid .working-process-box-items-3 {
-                            padding: 24px 18px;
-                        }
-
-                        .working-process-section-3 .process-grid .working-process-box-items-3::before {
-                            font-size: 160px;
-                            top: -40px;
-                            right: -35px;
-                        }
-
-                        .working-process-section-3 .process-grid .working-process-box-items-3 h3 {
-                            font-size: 17px;
-                        }
-
-                        .working-process-section-3 .process-grid .working-process-box-items-3 .working-process-icon-box {
-                            margin-bottom: 12px;
-                        }
-
-                        .working-process-section-3 .process-grid .working-process-box-items-3 .working-process-icon-box .icon {
-                            width: 50px;
-                            height: 50px;
-                        }
-
-                        .working-process-section-3 .process-grid .working-process-box-items-3 .working-process-icon-box .icon i {
-                            font-size: 24px;
-                        }
-                    }
-                </style>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-10 col-xl-8 col-xxl-7">
-                            <div class="section-content-block text-center">
-                                <span class="section-tag wow fadeInUp" data-wow-duration="1.2s">ПРОЦЕСС ПОДБОРА</span>
-                                <h2 class="section-title is-text-dark">Привлечение иностранной рабочей силы</h2>
-                                <p class="section-text col-lg-10 mx-auto wow fadeInUp" data-wow-delay=".2s" data-wow-duration="1.3s">От оформления заявки до постоянного сопровождения сотрудников с полной поддержкой на каждом этапе.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row gy-5 gx-4 mt-2 process-grid">
-                        <div class="col-12 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay=".1s">
-                            <div class="working-process-box-items-3" data-number="01">
-                                <div class="working-process-icon-box">
-                                    <div class="icon"><i class="fa-solid fa-clipboard-list"></i></div>
-                                    <div>
-                                        <h3> Оформление заявки</h3>
-                                    </div>
-                                </div>
-                                <p>Вы заполняете нашу анкету, где указываете должности, количество сотрудников, требуемые навыки и желаемые сроки выхода.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay=".2s">
-                            <div class="working-process-box-items-3" data-number="02">
-                                <div class="working-process-icon-box">
-                                    <div class="icon"><i class="fa-solid fa-search"></i></div>
-                                    <div>
-                                        <h3> Поиск и отбор</h3>
-                                    </div>
-                                </div>
-                                <p>Мы проводим отбор и тестирование кандидатов</p>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay=".3s">
-                            <div class="working-process-box-items-3" data-number="03">
-                                <div class="working-process-icon-box">
-                                    <div class="icon"><i class="fa-solid fa-user-check"></i></div>
-                                    <div>
-                                        <h3> Проверка профессиональных навыков</h3>
-                                    </div>
-                                </div>
-                                <p>процесс оценки реальных знаний и умений кандидата, необходимых для выполнения конкретной работы.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay=".4s">
-                            <div class="working-process-box-items-3" data-number="04">
-                                <div class="working-process-icon-box">
-                                    <div class="icon"><i class="fa-solid fa-handshake"></i></div>
-                                    <div>
-                                        <h3> Согласование с работодателем</h3>
-                                    </div>
-                                </div>
-                                <p>Вы изучаете анкеты кандидатов и проводите собеседования - окончательное решение остается за вами.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay=".5s">
-                            <div class="working-process-box-items-3" data-number="05">
-                                <div class="working-process-icon-box">
-                                    <div class="icon"><i class="fa-solid fa-heart-pulse"></i></div>
-                                    <div>
-                                        <h3> Медицинское обследование</h3>
-                                    </div>
-                                </div>
-                                <p>комплексная проверка состояния здоровья кандидата, проводимая лицензированным медицинским учреждением.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay=".6s">
-                            <div class="working-process-box-items-3" data-number="06">
-                                <div class="working-process-icon-box">
-                                    <div class="icon"><i class="fa-solid fa-file-contract"></i></div>
-                                    <div>
-                                        <h3> Оформление документов и разрешений</h3>
-                                    </div>
-                                </div>
-                                <p>Мы берем на себя подготовку всех разрешений на работу, приглашений и миграционную регистрацию в органах МВД.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay=".7s">
-                            <div class="working-process-box-items-3" data-number="07">
-                                <div class="working-process-icon-box">
-                                    <div class="icon"><i class="fa-solid fa-plane"></i></div>
-                                    <div>
-                                        <h3> Переезд и выход на работу</h3>
-                                    </div>
-                                </div>
-                                <p>Кандидаты проходят предвыездной инструктаж, готовятся к поездке и прибывают на ваш объект в оговоренные сроки.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay=".8s">
-                            <div class="working-process-box-items-3" data-number="08">
-                                <div class="working-process-icon-box">
-                                    <div class="icon"><i class="fa-solid fa-headset"></i></div>
-                                    <div>
-                                        <h3> Постоянное сопровождение</h3>
-                                    </div>
-                                </div>
-                                <p>Наше взаимодействие не останавливается на трудоустройстве.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-       
-
-
-
-        <!-- ...::: Section Support Start :::... -->
-        <section class="section-support">
-            <div class="support-area position-relative z-index-1 gradient-bg">
-                
-
-                <!-- Section Background Image -->
-                <div class="bg-element-list image-block">
-                    <img src="assets/images/support-bg-element-1.png" alt="support-bg-element-1" width="326"
-                        height="402" class="bg-element">
-                    <img src="assets/images/support-bg-element-2.png" alt="support-bg-element-2" width="560"
-                        height="300" class="bg-element">
-                    <img src="assets/images/support-bg-element-4.svg" alt="support-bg-element-4" width="580"
-                        height="444" class="bg-element">
-                    <img src="assets/images/support-bg-element-5.svg" alt="support-bg-element-5" width="668"
-                        height="199" class="bg-element">
-                </div>
-            </div>
-        </section>
-        <!-- ...::: Section Support End :::... -->
-
-       
-
-       
+      <!-- ...::: Section Support Start :::... -->
+      <section class="section-support">
+        <div class="support-area position-relative z-index-1 gradient-bg">
+          <!-- Section Background Image -->
+          <div class="bg-element-list image-block">
+            <img
+              src="assets/images/support-bg-element-1.png"
+              alt="support-bg-element-1"
+              width="326"
+              height="402"
+              class="bg-element"
+            />
+            <img
+              src="assets/images/support-bg-element-2.png"
+              alt="support-bg-element-2"
+              width="560"
+              height="300"
+              class="bg-element"
+            />
+            <img
+              src="assets/images/support-bg-element-4.svg"
+              alt="support-bg-element-4"
+              width="580"
+              height="444"
+              class="bg-element"
+            />
+            <img
+              src="assets/images/support-bg-element-5.svg"
+              alt="support-bg-element-5"
+              width="668"
+              height="199"
+              class="bg-element"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- ...::: Section Support End :::... -->
     </main>
     <!-- Main Wrapper -->
     <!-- Floating contact buttons -->
     <div class="floating-contact" id="floatingContact">
-        <a href="https://wa.me/74994556135" target="_blank" class="contact-btn whatsapp" aria-label="WhatsApp">
-            <span class="btn-wave"></span>
-            <span class="pulse" style="background: radial-gradient(circle at 30% 30%, rgba(37,211,102,0.12), transparent);"></span>
-            <i class="fa-brands fa-whatsapp"></i>
-        </a>
-        <a href="tel:+74994556135" class="contact-btn call" aria-label="Call">
-            <span class="btn-wave"></span>
-            <span class="pulse" style="background: radial-gradient(circle at 30% 30%, rgba(109,21,45,0.12), transparent);"></span>
-            <i class="fa-solid fa-phone"></i>
-        </a>
+      <a
+        href="https://wa.me/74994556135"
+        target="_blank"
+        class="contact-btn whatsapp"
+        aria-label="WhatsApp"
+      >
+        <span class="btn-wave"></span>
+        <span
+          class="pulse"
+          style="
+            background: radial-gradient(
+              circle at 30% 30%,
+              rgba(37, 211, 102, 0.12),
+              transparent
+            );
+          "
+        ></span>
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="tel:+74994556135" class="contact-btn call" aria-label="Call">
+        <span class="btn-wave"></span>
+        <span
+          class="pulse"
+          style="
+            background: radial-gradient(
+              circle at 30% 30%,
+              rgba(109, 21, 45, 0.12),
+              transparent
+            );
+          "
+        ></span>
+        <i class="fa-solid fa-phone"></i>
+      </a>
     </div>
     <!-- ...::: Section Footer Start :::... -->
     <footer class="section-footer">
-        <div class="footer">
-            <div class="">
-                <div class="section-space">
-                    <div class="container-fluid px-4">
-                        <div class="row gy-5">
-                            <div class="col-lg-3">
-                                <div class="footer-widget footer-widget-about">
-                                    <a href="index.html">
-                                        <img src="assets/imgs/logo.png" alt="logo-dark" width="126"
-                                            height="56">
-                                    </a>
-                                    <p>Пионер в области провидения инновационных решений в области кадров. Мы реализуем высококвалифицированные кадры во всех сегментах - сквалифицированное управление, медиайные, и неквалифицированные кадры для строительства, нефтяногаз, гостеприимства, производства и ИТ.</p>
-                                    <div class="social-menu footer-social-menu">
-                                        <a href="https://www.linkedin.com/company/suntech-engineers-contractor/" target="_blank" rel="noopener noreferrer">
-                                            <i class="fa-brands fa-linkedin-in"></i>
-                                        </a>
-                                        <a href="https://www.instagram.com/suntechengineersandcontractors/" target="_blank" rel="noopener noreferrer">
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </a>
-                                        <a href="https://www.facebook.com/profile.php?id=100066634811942" target="_blank" rel="noopener noreferrer">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-2">
-                              
-                                  
-                                <div class="footer-widget footer-widget-nav">
-                                    <h4 class="footer-title">Услуги</h4>
-                                    <nav class="footer-nav">
-                                        <ul>
-                                            <li><a href="foreign-rec.html">Иностранный рекрутмент</a></li>
-                                            <li><a href="migration-legal.html">Миграция и юридические документы</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            
-                            </div>
-                         
-                            <div class="col-lg-2">
-                                <div class="footer-widget footer-widget-nav">
-                                    <h4 class="footer-title">Отрасли</h4>
-                                    <nav class="footer-nav">
-                                        <ul>
-                                            <li><a href="construction.html">Строительство</a></li>
-                                            <li><a href="manufacturing.html">Производство</a></li>
-                                            <li><a href="hospitality.html">Гостеприимство</a></li>
-                                            <li><a href="logistics.html">Логистика</a></li>
-                                            <li><a href="agriculture.html">Сельское хозяйство</a></li>
-                                            <li><a href="it.html">ИТ и техника</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="col-lg-2">
-                                <div class="footer-widget footer-widget-nav">
-                                    <h4 class="footer-title">Страны-источники</h4>
-                                    <nav class="footer-nav">
-                                        <ul>
-                                            <li><a href="india.html">Индия</a></li>
-                                            <li><a href="nepal.html">Непал</a></li>
-                                            <li><a href="sri-lanka.html">Шри-Ланка</a></li>
-                                            <li><a href="bangladesh.html">Бангладеш</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="footer-widget footer-widget-contact">
-                                    <h4 class="footer-title">Свяжитесь с нами</h4>
-                                    <ul class="footer-contact-info">
-                                         <li>
-                                            <i class="fa-solid fa-location-dot"></i>
-                                            <span>123 Business Avenue, Suite 100<br>New York, NY 10001</span>
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-phone"></i>
-                                            <a href="tel:+74994556135">+7 499 455 6135</a>
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-envelope"></i>
-                                            <a href="mailto:info@vneshpersonnel.ru">info@vneshpersonnel.ru</a>
-                                        </li>
-                                       
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+      <div class="footer">
+        <div class="">
+          <div class="section-space">
+            <div class="container-fluid px-4">
+              <div class="row gy-5">
+                <div class="col-lg-3">
+                  <div class="footer-widget footer-widget-about">
+                    <a href="index.html">
+                      <img
+                        src="assets/imgs/logo.png"
+                        alt="logo-dark"
+                        width="126"
+                        height="56"
+                      />
+                    </a>
+                    <p>
+                      Пионер в области провидения инновационных решений в
+                      области кадров. Мы реализуем высококвалифицированные кадры
+                      во всех сегментах - сквалифицированное управление,
+                      медиайные, и неквалифицированные кадры для строительства,
+                      нефтяногаз, гостеприимства, производства и ИТ.
+                    </p>
+                    <div class="social-menu footer-social-menu">
+                      <a
+                        href="https://www.linkedin.com/company/suntech-engineers-contractor/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                      <a
+                        href="https://www.instagram.com/suntechengineersandcontractors/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                      <a
+                        href="https://www.facebook.com/profile.php?id=100066634811942"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
                     </div>
+                  </div>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-auto">
-                            <p class="copyright-text mb-0 text-white">&copy; 2026 Suntech Engineers & Contractors. Все права защищены.</p>
-                        </div>
-                        <div class="col-auto">
-                            <div class="footer-bottom-links">
-                                <a href="#" class="text-white">Политика конфиденциальности</a>
-                                <span class="text-white mx-2">|</span>
-                                <a href="#" class="text-white">Условия обслуживания</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-2">
+                  <div class="footer-widget footer-widget-nav">
+                    <h4 class="footer-title">Услуги</h4>
+                    <nav class="footer-nav">
+                      <ul>
+                        <li>
+                          <a href="foreign-rec.html">Иностранный рекрутмент</a>
+                        </li>
+                        <li>
+                          <a href="migration-legal.html"
+                            >Миграция и юридические документы</a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
                 </div>
+
+                <div class="col-lg-2">
+                  <div class="footer-widget footer-widget-nav">
+                    <h4 class="footer-title">Отрасли</h4>
+                    <nav class="footer-nav">
+                      <ul>
+                        <li><a href="construction.html">Строительство</a></li>
+                        <li><a href="manufacturing.html">Производство</a></li>
+                        <li><a href="hospitality.html">Гостеприимство</a></li>
+                        <li><a href="logistics.html">Логистика</a></li>
+                        <li>
+                          <a href="agriculture.html">Сельское хозяйство</a>
+                        </li>
+                        <li><a href="it.html">ИТ и техника</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="footer-widget footer-widget-nav">
+                    <h4 class="footer-title">Страны-источники</h4>
+                    <nav class="footer-nav">
+                      <ul>
+                        <li><a href="india.html">Индия</a></li>
+                        <li><a href="nepal.html">Непал</a></li>
+                        <li><a href="sri-lanka.html">Шри-Ланка</a></li>
+                        <li><a href="bangladesh.html">Бангладеш</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="footer-widget footer-widget-contact">
+                    <h4 class="footer-title">Свяжитесь с нами</h4>
+                    <ul class="footer-contact-info">
+                      <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span
+                          >123 Business Avenue, Suite 100<br />New York, NY
+                          10001</span
+                        >
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+74994556135">+7 499 455 6135</a>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@vneshpersonnel.ru"
+                          >info@vneshpersonnel.ru</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-auto">
+                <p class="copyright-text mb-0 text-white">
+                  &copy; 2026 Suntech Engineers & Contractors. Все права
+                  защищены.
+                </p>
+              </div>
+              <div class="col-auto">
+                <div class="footer-bottom-links">
+                  <a href="#" class="text-white">Политика конфиденциальности</a>
+                  <span class="text-white mx-2">|</span>
+                  <a href="#" class="text-white">Условия обслуживания</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- ...::: Section Footer End :::... -->
 
-
     <button class="scroll-to-top">
-        <i class="fa-regular fa-arrow-up"></i>
+      <i class="fa-regular fa-arrow-up"></i>
     </button>
 
     <!--Vendor js-->
@@ -1494,37 +2166,36 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-        const minSlider = document.getElementById('min-slider');
-        const maxSlider = document.getElementById('max-slider');
-        const rangeBetween = document.getElementById('range-between');
-        const minValueText = document.getElementById('min-value');
-        const maxValueText = document.getElementById('max-value');
-        const sliderContainer = document.querySelector('.slider-container');
+      const minSlider = document.getElementById("min-slider");
+      const maxSlider = document.getElementById("max-slider");
+      const rangeBetween = document.getElementById("range-between");
+      const minValueText = document.getElementById("min-value");
+      const maxValueText = document.getElementById("max-value");
+      const sliderContainer = document.querySelector(".slider-container");
 
-        function updateRange() {
-            let minVal = parseInt(minSlider.value);
-            let maxVal = parseInt(maxSlider.value);
+      function updateRange() {
+        let minVal = parseInt(minSlider.value);
+        let maxVal = parseInt(maxSlider.value);
 
-            if (minVal > maxVal) {
-                [minVal, maxVal] = [maxVal, minVal]; // Swap values
-            }
-
-            minValueText.textContent = minVal;
-            maxValueText.textContent = maxVal;
-
-            const range = maxSlider.max - minSlider.min;
-            const left = ((minVal - minSlider.min) / range) * 100;
-            const right = ((maxVal - minSlider.min) / range) * 100;
-
-            rangeBetween.style.left = left + '%';
-            rangeBetween.style.width = (right - left) + '%';
+        if (minVal > maxVal) {
+          [minVal, maxVal] = [maxVal, minVal]; // Swap values
         }
 
-        minSlider.addEventListener('input', updateRange);
-        maxSlider.addEventListener('input', updateRange);
+        minValueText.textContent = minVal;
+        maxValueText.textContent = maxVal;
 
-        updateRange(); // Initial update
+        const range = maxSlider.max - minSlider.min;
+        const left = ((minVal - minSlider.min) / range) * 100;
+        const right = ((maxVal - minSlider.min) / range) * 100;
+
+        rangeBetween.style.left = left + "%";
+        rangeBetween.style.width = right - left + "%";
+      }
+
+      minSlider.addEventListener("input", updateRange);
+      maxSlider.addEventListener("input", updateRange);
+
+      updateRange(); // Initial update
     </script>
-</body>
-
+  </body>
 </html>
