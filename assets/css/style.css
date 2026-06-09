@@ -8108,7 +8108,7 @@ input[type=range]::-webkit-slider-thumb {
 .service-image-link {
   display: block;
   border-radius: 12px;
-  height: 266px;
+  height: 297px;
   overflow: hidden;
 }
 .service-thumbnail {
@@ -8116,28 +8116,29 @@ input[type=range]::-webkit-slider-thumb {
   transition: all 0.3s ease-in-out;
 }
 .service-icon {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  position: absolute;
-  bottom: calc(0% - 42px);
-  left: 24px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  border: 2px dotted #6D152D;
-  border-radius: 50%;
-  background: #fff;
-  width: 84px;
-  height: 84px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: absolute;
+    bottom: calc(0% - 14px);
+    left: 2px;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border: 2px dotted #6D152D;
+    border-radius: 50%;
+    background: #fff;
+    width: 60px;
+    height: 60px;
 }
 .service-icon i {
-  font-size: 40px;
+  font-size: 24px;
   color: #6D152D;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -8152,10 +8153,10 @@ input[type=range]::-webkit-slider-thumb {
 }
 .service-item:hover .service-icon i {
   color: #fff;
-  font-size: 45px;
+  font-size: 30px;
 }
 .service-content {
-  margin-top: 60px;
+  margin-top: 27px;
 }
 
 /* Client Logo Image Styling */
@@ -12403,4 +12404,51 @@ iframe.skiptranslate {
     font-size: 12px;
     margin-left: 8px;
     color: #ffffff;
+}
+
+
+
+.home-about{
+  font-size: 52px; font-weight: 800; color: #6D152D; margin-bottom: 32px; line-height: 1.1; letter-spacing: -1px;
+}
+
+.home-about-subh{
+  font-size: 20px; font-weight: 700; color: #1a1a1a; margin-bottom: 28px;
+}
+
+
+
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 26px !important;
+    line-height: 1.2;
+}
+.section-text {
+    margin-top: 20px;
+    font-size: 15px;
+}
+.hero-area-1 {
+    padding-block: 36px 20px;
+}
+.btn .btn-icon {
+    width: 39px;
+    height: 39px;
+    overflow: hidden;
+    color: #6D152D;
+    font-size: 15px;
+}
+.home-about {
+    font-size: 32px;
+    font-weight: 800;
+   
+}
+.home-about-subh {
+    font-size: 15px;
+}
+.section-title.is-text-dark {
+    color: #6D152D;
+    font-size: 29px;
+}
+
 }
