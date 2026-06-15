@@ -3033,7 +3033,7 @@ select {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
+          flex-direction: row;
   gap: 15px;
 }
 .footer-nav a {
@@ -3115,7 +3115,7 @@ select {
 /* Footer Contact Info Styling */
 .footer-contact-info {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
   list-style: none;
   padding: 0;
@@ -3127,6 +3127,9 @@ select {
   padding-left: 0px;
   padding-right: 0px;
   overflow: hidden;
+      display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .section-footer .col-lg-2 {
   padding-left: 0px;
@@ -12450,5 +12453,30 @@ iframe.skiptranslate {
     color: #6D152D;
     font-size: 29px;
 }
-
+.footer-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column !important;
+    gap: 15px;
+}
+.footer-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-widget {
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
 }
