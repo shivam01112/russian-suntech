@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -114,6 +114,80 @@
         margin-left: 8px;
         color: #ffffff;
       }
+
+      .home-footer-selection {
+        padding: 6px 0 12px;
+      }
+
+      .home-footer-selection__nav {
+        display: flex;
+        justify-content: center;
+      }
+
+      .home-footer-selection__nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px 34px;
+        width: 100%;
+        max-width: 1240px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .home-footer-selection__nav a {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        padding-left: 16px;
+        color: #3f444d;
+        font-size: 1.02rem;
+        font-weight: 500;
+        line-height: 1.55;
+      }
+
+      .home-footer-selection__nav a::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #6d152d;
+        transform: translateY(-50%);
+      }
+
+      .home-footer-selection__nav a::after {
+        display: none;
+      }
+
+      .home-footer-selection__nav a:hover {
+        color: #6d152d;
+      }
+
+      @media (max-width: 767px) {
+        .home-footer-selection {
+          padding: 0 0 4px;
+        }
+
+        .home-footer-selection__nav {
+          justify-content: flex-start;
+        }
+
+        .home-footer-selection__nav ul {
+          flex-direction: column;
+          gap: 10px;
+          max-width: 360px;
+          margin: 0 auto;
+        }
+
+        .home-footer-selection__nav a {
+          font-size: 0.98rem;
+          line-height: 1.45;
+        }
+      }
     </style>
   </head>
 
@@ -151,24 +225,11 @@
                   <li class="header-nav-item">
                     <a href="about.html" class="header-nav-link">О нас</a>
                   </li>
-
-                  <li class="header-nav-item has-submenu">
-                    <a href="#" class="header-nav-link">Услуги</a>
-                    <ul class="dropdown-menu-list">
-                      <li class="dropdown-menu-item">
-                        <a href="foreign-rec.html" class="dropdown-menu-link"
-                          >Иностранный рекрутмент (Россия)</a
-                        >
-                      </li>
-                      <li class="dropdown-menu-item">
-                        <a
-                          href="migration-legal.html"
-                          class="dropdown-menu-link"
-                          >Миграция и юридические документы</a
-                        >
-                      </li>
-                    </ul>
+                
+                  <li class="header-nav-item">
+                    <a href="services.html" class="header-nav-link">Услуги</a>
                   </li>
+                  
                   <li class="header-nav-item has-submenu">
                     <a href="#" class="header-nav-link">Отрасли</a>
                     <ul class="dropdown-menu-list">
@@ -204,32 +265,7 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="header-nav-item has-submenu">
-                    <a href="#" class="header-nav-link">Страны-источники</a>
-                    <ul class="dropdown-menu-list">
-                      <li class="dropdown-menu-item">
-                        <a href="india.html" class="dropdown-menu-link"
-                          >Индия</a
-                        >
-                      </li>
-                      <li class="dropdown-menu-item">
-                        <a href="nepal.html" class="dropdown-menu-link"
-                          >Непал</a
-                        >
-                      </li>
-                      <li class="dropdown-menu-item">
-                        <a href="sri-lanka.html" class="dropdown-menu-link"
-                          >Шри-Ланка</a
-                        >
-                      </li>
-                      <li class="dropdown-menu-item">
-                        <a href="bangladesh.html" class="dropdown-menu-link"
-                          >Бангладеш</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="header-nav-item">
+                                 <li class="header-nav-item">
                     <a href="contact.html" class="header-nav-link"
                       >Свяжитесь с нами</a
                     >
@@ -361,24 +397,15 @@
         <nav class="category-menu">
           <ul>
             <li class="category">
-              <a href="index.html">Home</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="category">
-              <a href="about.html">About</a>
+              <a href="about.html">О нас</a>
             </li>
             <li class="category">
-              <a href="#" class="subcategory-trigger">Услуги</a>
-              <ul style="margin-left: 15px; margin-top: 10px; display: none">
-                <li>
-                  <a href="foreign-rec.html">Иностранный рекрутмент (Россия)</a>
-                </li>
-                <li>
-                  <a href="migration-legal.html"
-                    >Миграция и юридические документы</a
-                  >
-                </li>
-              </ul>
+              <a href="services.html">Услуги</a>
             </li>
+            
             <li class="category">
               <a href="#" class="subcategory-trigger">Отрасли</a>
               <ul style="margin-left: 15px; margin-top: 10px; display: none">
@@ -390,16 +417,8 @@
                 <li><a href="it.html">IT & Technical</a></li>
               </ul>
             </li>
-            <li class="category">
-              <a href="#" class="subcategory-trigger">Страны-источники</a>
-              <ul style="margin-left: 15px; margin-top: 10px; display: none">
-                <li><a href="india.html">Индия</a></li>
-                <li><a href="nepal.html">Непал</a></li>
-                <li><a href="sri-lanka.html">Шри-Ланка</a></li>
-                <li><a href="bangladesh.html">Бангладеш</a></li>
-              </ul>
-            </li>
-            <li class="category">
+          
+                      <li class="category">
               <a href="contact.html">Свяжитесь с нами</a>’
             </li>
           </ul>
@@ -464,9 +483,7 @@
                     <strong>«ВНЕШПЕРСОНАЛ» </strong>
                   </h2>
                   <p class="section-text text-light mb-5">
-                   — эксклюзивный представитель лидера индийского рынка «Suntech Engineers and Contractors» по подбору персонала. За 35 лет работы трудоустроено свыше 500 тысяч сотрудников в более чем 30 стран мира в
-разных сферах деятельности.
-
+                  Наша компания предоставляет полный спектр услугпо поиску и трудоустройству квалифицированной рабочей силы из Индии, Бангладеш, Шри-Ланки и стран Африки для ключевых отраслей с соблюдением всех требований трудового и миграционного законодательства Российской Федерации.
                   </p>
 
                   <a href="contact.html" class="btn btn-secondary-alt">
@@ -2065,18 +2082,28 @@
                 </div> -->
 
                 <div class="col-lg-12">
-                  <div class="footer-widget footer-widget-nav">
-                    <!-- <h4 class="footer-title">Отрасли</h4> -->
-                    <nav class="footer-nav">
+                  <div class="footer-widget footer-widget-nav home-footer-selection">
+                    <nav class="footer-nav home-footer-selection__nav">
                       <ul>
-                        <li><a href="construction.html">Строительство</a></li>
-                        <li><a href="manufacturing.html">Производство</a></li>
-                        <li><a href="hospitality.html">Гостеприимство</a></li>
-                        <li><a href="logistics.html">Логистика</a></li>
+                        <li><a href="construction.html">Construction</a></li>
+                        <li><a href="manufacturing.html">Manufacturing</a></li>
                         <li>
-                          <a href="agriculture.html">Сельское хозяйство</a>
+                          <a href="hospitality.html"
+                            >Hospitality and Food Service</a
+                          >
                         </li>
-                        <li><a href="it.html">ИТ и техника</a></li>
+                        <li>
+                          <a href="logistics.html"
+                            >Logistics and Warehousing</a
+                          >
+                        </li>
+                        <li><a href="agriculture.html">Agriculture</a></li>
+                        <li>
+                          <a href="it.html"
+                            >Artificial Intelligence Technologies and Technical
+                            Specialists</a
+                          >
+                        </li>
                       </ul>
                     </nav>
                   </div>
@@ -2105,10 +2132,10 @@
                           10001</span
                         >
                       </li> -->
-                      <li>
+                      <!-- <li>
                         <i class="fa-solid fa-phone"></i>
                         <a href="tel:+74994556135">+7 499 455 6135</a>
-                      </li>
+                      </li> -->
                       <li>
                         <i class="fa-solid fa-envelope"></i>
                         <a href="mailto:info@vneshpersonnel.ru"

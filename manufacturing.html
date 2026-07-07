@@ -32,229 +32,272 @@
    
   <!-- ...::: Section Header Start :::... -->
     <div class="section-header">
-        <div class="header-wrapper">
-            <!-- Simple Clean Header -->
-            <div class="header-clean-style">
-                <div class="space-x-128">
-                    <div class="header-clean-area">
-                        <!-- Logo -->
-                        <div class="header-logo">
-                            <a href="index.html">
-                                <img src="assets/imgs/logo.png" alt="logo" class="img img-responsive img-fluid" width="auto" height="auto">
-                            </a>
-                        </div>
-                        
-                        <!-- Main Navigation Menu -->
-                        <nav class="header-nav d-none d-lg-block">
-                                <ul class="header-nav-list">
-                                    <li class="header-nav-item">
-                                        <a href="index.html" class="header-nav-link">Главная</a>
-                                    </li>
-                                    <li class="header-nav-item">
-                                        <a href="about.html" class="header-nav-link">О нас</a>
-                                    </li>
-                                   
-                                    <li class="header-nav-item has-submenu">
-                                        <a href="#" class="header-nav-link">Услуги</a>
-                                        <ul class="dropdown-menu-list">
-                                            <li class="dropdown-menu-item">
-                                                <a href="foreign-rec.html" class="dropdown-menu-link">Иностранный рекрутмент (Россия)</a>
-                                            </li>
-                                             <li class="dropdown-menu-item">
-                                                <a href="migration-legal.html" class="dropdown-menu-link">Миграция и юридические документы</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="header-nav-item has-submenu">
-                                        <a href="#" class="header-nav-link">Отрасли</a>
-                                        <ul class="dropdown-menu-list">
-                                            <li class="dropdown-menu-item">
-                                                <a href="construction.html" class="dropdown-menu-link">Строительство</a>
-                                          </li>
-                                            <li class="dropdown-menu-item">
-                                                <a href="manufacturing.html" class="dropdown-menu-link">Производство</a>
-                                               </li>
-                                            <li class="dropdown-menu-item">
-                                                <a href="hospitality.html" class="dropdown-menu-link">Гостеприимство</a>
-                                                    </li>
-                                                     <li class="dropdown-menu-item">
-                                                <a href="logistics.html" class="dropdown-menu-link">Логистика</a>
-                                                    </li>
-                                                     <li class="dropdown-menu-item">
-                                                <a href="agriculture.html" class="dropdown-menu-link">Сельское хозяйство</a>
-                                                    </li>
-                                                     <li class="dropdown-menu-item">
-                                                <a href="it.html" class="dropdown-menu-link">IT & Technical</a>
-                                                   </li>
-                                           
-                                        </ul>
-                                    </li>
-                                    <li class="header-nav-item has-submenu">
-                                        <a href="#" class="header-nav-link">Страны-источники</a>
-                                        <ul class="dropdown-menu-list">
-                                            <li class="dropdown-menu-item">
-                                                <a href="india.html" class="dropdown-menu-link">Индия</a>
-                                            </li>
-                                             <li class="dropdown-menu-item">
-                                                <a href="nepal.html" class="dropdown-menu-link">Непал</a>
-                                            </li>
-                                            <li class="dropdown-menu-item">
-                                                <a href="sri-lanka.html" class="dropdown-menu-link">Шри-Ланка</a>
-                                            </li>
-                                            <li class="dropdown-menu-item">
-                                                <a href="bangladesh.html" class="dropdown-menu-link">Бангладеш</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="header-nav-item">
-                                        <a href="contact.html" class="header-nav-link">Свяжитесь с нами</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <!-- Header Menu -->
-                            
-                        <!-- Right Side - Language, Icons & Contact -->
-                        <div class="header-right-side">
-                            <select name="localization" id="localization" class="localization-clean" onchange="changeLanguage(this.value)">
-                                <option value="russian" selected>Русский</option>
-                                <option value="english">English</option>
-                                <option value="spanish">Spanish</option>
-                                <option value="french">French</option>
-                                <option value="german">German</option>
-                                <option value="italian">Italian</option>
-                                <option value="portuguese">Portuguese</option>
-                                <option value="japanese">Japanese</option>
-                                <option value="chinese">Chinese (Simplified)</option>
-                                <option value="arabic">Arabic</option>
-                                <option value="hindi">Hindi</option>
-                            </select>
-                            
-                            <script>
-                                document.getElementById('localization').value = 'russian';
-                            </script>
-                            
-                            <!-- Hidden Google Translate Element -->
-                            <div id="google_translate_element" style="display: none;"></div>
-                            
-                            <!-- <button class="header-user-event-button header-user-event-button-search" type="button"
+      <div class="header-wrapper">
+        <!-- Simple Clean Header -->
+        <div class="header-clean-style">
+          <div class="space-x-128">
+            <div class="header-clean-area">
+              <!-- Logo -->
+              <div class="header-logo">
+                <a href="index.html">
+                  <img
+                    src="assets/imgs/logo.png"
+                    alt="logo"
+                    class="img img-responsive img-fluid"
+                    width="auto"
+                    height="auto"
+                  />
+                </a>
+              </div>
+
+              <!-- Main Navigation Menu -->
+              <nav class="header-nav d-none d-lg-block">
+                <ul class="header-nav-list">
+                  <li class="header-nav-item">
+                    <a href="index.html" class="header-nav-link">Главная</a>
+                  </li>
+                  <li class="header-nav-item">
+                    <a href="about.html" class="header-nav-link">О нас</a>
+                  </li>
+                
+                  <li class="header-nav-item">
+                    <a href="services.html" class="header-nav-link">Услуги</a>
+                  </li>
+                  
+                  <li class="header-nav-item has-submenu">
+                    <a href="#" class="header-nav-link">Отрасли</a>
+                    <ul class="dropdown-menu-list">
+                      <li class="dropdown-menu-item">
+                        <a href="construction.html" class="dropdown-menu-link"
+                          >Строительство</a
+                        >
+                      </li>
+                      <li class="dropdown-menu-item">
+                        <a href="manufacturing.html" class="dropdown-menu-link"
+                          >Производство и производство</a
+                        >
+                      </li>
+                      <li class="dropdown-menu-item">
+                        <a href="hospitality.html" class="dropdown-menu-link"
+                          >Гостеприимство и отели</a
+                        >
+                      </li>
+                      <li class="dropdown-menu-item">
+                        <a href="logistics.html" class="dropdown-menu-link"
+                          >Логистика и складское хозяйство</a
+                        >
+                      </li>
+                      <li class="dropdown-menu-item">
+                        <a href="agriculture.html" class="dropdown-menu-link"
+                          >Сельское хозяйство</a
+                        >
+                      </li>
+                      <li class="dropdown-menu-item">
+                        <a href="it.html" class="dropdown-menu-link"
+                          >ИТ и техника
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                                 <li class="header-nav-item">
+                    <a href="contact.html" class="header-nav-link"
+                      >Свяжитесь с нами</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <!-- Header Menu -->
+
+              <!-- Right Side - Language, Icons & Contact -->
+              <div class="header-right-side">
+                <select
+                  name="localization"
+                  id="localization"
+                  class="localization-clean"
+                  onchange="changeLanguage(this.value)"
+                >
+                  <option value="russian" selected>Русский</option>
+                  <option value="english">English</option>
+                  <option value="spanish">Spanish</option>
+                  <option value="french">French</option>
+                  <option value="german">German</option>
+                  <option value="italian">Italian</option>
+                  <option value="portuguese">Portuguese</option>
+                  <option value="japanese">Japanese</option>
+                  <option value="chinese">Chinese (Simplified)</option>
+                  <option value="arabic">Arabic</option>
+                  <option value="hindi">Hindi</option>
+                </select>
+
+                <script>
+                  document.getElementById("localization").value = "russian";
+                </script>
+
+                <!-- Hidden Google Translate Element -->
+                <div id="google_translate_element" style="display: none"></div>
+
+                <!-- <button class="header-user-event-button header-user-event-button-search" type="button"
                                 data-bs-toggle="offcanvas" data-bs-target="#searchBar" aria-controls="searchBar">
                                 <i class="fa-light fa-search"></i>
                             </button> -->
-                            
-                            <div class="header-phone-contact">
-                                <i class="fa-light fa-phone"></i>
-                                <div>
-                                    <a href="tel:+532093213333" class="phone-number">+7 499 455 6135</a>
-                                    <span class="phone-label">Пн-Пт 9:00 - 19:30</span>
-                                </div>
-                            </div>
-                            
-                            <div class="header-social-links">
-                                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </a>
-                                <a href="https://www.x.com" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                </a>
-                                <a href="https://www.dribbble.com" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-dribbble"></i>
-                                </a>
-                                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </div>
-                            
-                            <!-- Responsive Offcanvas Menu Button -->
-                            <button class="header-user-event-button navbar-toggler d-block d-lg-none" type="button"
-                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasManu"
-                                aria-controls="offcanvasManu">
-                                <i class="fa-regular fa-bars"></i>
-                            </button>
-                            <!-- Responsive Offcanvas Menu Button -->
-                        </div>
-                        
-                    </div>
+
+                <div class="header-phone-contact">
+                  <i class="fa-light fa-phone"></i>
+                  <div>
+                    <a href="tel:+532093213333" class="phone-number"
+                      >+7 499 455 6135</a
+                    >
+                    <span class="phone-label">Пн-Пт 9:00 - 19:30</span>
+                  </div>
                 </div>
+
+                <div class="header-social-links">
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="https://www.x.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                  <a
+                    href="https://www.dribbble.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-dribbble"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+
+                <!-- Responsive Offcanvas Menu Button -->
+                <button
+                  class="header-user-event-button navbar-toggler d-block d-lg-none"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasManu"
+                  aria-controls="offcanvasManu"
+                >
+                  <i class="fa-regular fa-bars"></i>
+                </button>
+                <!-- Responsive Offcanvas Menu Button -->
+              </div>
             </div>
-            <!-- End Simple Clean Header -->
+          </div>
         </div>
+        <!-- End Simple Clean Header -->
+      </div>
     </div>
     <!-- ...::: Section Header End :::... -->
 
     <!-- ...::: Offcanvas Menu Start:::... -->
-    <div class="offcanvas offcanvas-start block-bg-dark" tabindex="-1" id="offcanvasManu"
-        aria-labelledby="offcanvasManu">
-        <div class="offcanvas-header">
-            <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <a href="index.html" class="d-flex  mb-4">
-                <img src="assets/imgs/logo.png" alt="logo"  width="56" height="56" class="img-fluid">
-            </a>
+    <div
+      class="offcanvas offcanvas-start block-bg-dark"
+      tabindex="-1"
+      id="offcanvasManu"
+      aria-labelledby="offcanvasManu"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <a href="index.html" class="d-flex mb-4">
+          <img
+            src="assets/imgs/logo.png"
+            alt="logo"
+            width="56"
+            height="56"
+            class="img-fluid"
+          />
+        </a>
 
-            <nav class="category-menu">
-                <ul>
-                    <li class="category">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="category">
-                        <a href="about.html">About</a>
-                    </li>
-                    <li class="category">
-                        <a href="#" class="subcategory-trigger">Услуги</a>
-                        <ul style="margin-left: 15px; margin-top: 10px; display: none;">
-                            <li><a href="foreign-rec.html">Иностранный рекрутмент (Россия)</a></li>
-                            <li><a href="migration-legal.html">Миграция и юридические документы</a></li>
-                        </ul>
-                    </li>
-                    <li class="category">
-                        <a href="#" class="subcategory-trigger">Отрасли</a>
-                        <ul style="margin-left: 15px; margin-top: 10px; display: none;">
-                            <li><a href="construction.html">Строительство</a></li>
-                            <li><a href="manufacturing.html">Производство</a></li>
-                            <li><a href="hospitality.html">Гостеприимство</a></li>
-                            <li><a href="logistics.html">Логистика</a></li>
-                            <li><a href="agriculture.html">Сельское хозяйство</a></li>
-                            <li><a href="it.html">IT & Technical</a></li>
-                        </ul>
-                    </li>
-                    <li class="category">
-                        <a href="#" class="subcategory-trigger">Страны-источники</a>
-                        <ul style="margin-left: 15px; margin-top: 10px; display: none;">
-                            <li><a href="india.html">Индия</a></li>
-                            <li><a href="nepal.html">Непал</a></li>
-                            <li><a href="sri-lanka.html">Шри-Ланка</a></li>
-                            <li><a href="bangladesh.html">Бангладеш</a></li>
-                        </ul>
-                    </li>
-                    <li class="category">
-                        <a href="contact.html">Свяжитесь с нами</a>
-                    </li>
-                </ul>
-            </nav>
-
-        </div>
+        <nav class="category-menu">
+          <ul>
+            <li class="category">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="category">
+              <a href="about.html">О нас</a>
+            </li>
+            <li class="category">
+              <a href="services.html">Услуги</a>
+            </li>
+            
+            <li class="category">
+              <a href="#" class="subcategory-trigger">Отрасли</a>
+              <ul style="margin-left: 15px; margin-top: 10px; display: none">
+                <li><a href="construction.html">Construction</a></li>
+                <li><a href="manufacturing.html">Производство</a></li>
+                <li><a href="hospitality.html">Гостеприимство</a></li>
+                <li><a href="logistics.html">Logistics & Warehousing</a></li>
+                <li><a href="agriculture.html">Agriculture</a></li>
+                <li><a href="it.html">IT & Technical</a></li>
+              </ul>
+            </li>
+          
+                      <li class="category">
+              <a href="contact.html">Свяжитесь с нами</a>’
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <!-- ...::: Offcanvas Menu End:::... -->
 
     <!-- Offcanvas Search -->
-    <div class="offcanvas offcanvas-top" tabindex="-1" id="searchBar" aria-labelledby="searchBarLabel">
-        <div class="offcanvas-header">
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-lg-8 mx-auto">
-                        <h5 class="offcanvas-title mb-2" id="searchBarLabel">Поиск по ключевому слову</h5>
-                        <form action="#" method="get" class="position-relative">
-                            <input type="search" placeholder="Поиск здесь" class="form-input pe-5" required="">
-                            <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </form>
-                    </div>
-                </div>
+    <div
+      class="offcanvas offcanvas-top"
+      tabindex="-1"
+      id="searchBar"
+      aria-labelledby="searchBarLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="container">
+          <div class="row">
+            <div class="col col-lg-8 mx-auto">
+              <h5 class="offcanvas-title mb-2" id="searchBarLabel">
+                Поиск по ключевому слову
+              </h5>
+              <form action="#" method="get" class="position-relative">
+                <input
+                  type="search"
+                  placeholder="Поиск здесь"
+                  class="form-input pe-5"
+                  required
+                />
+                <button class="search-button">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Offcanvas Search -->
 
@@ -393,7 +436,7 @@
                                           
                                             <h2 class="section-title is-text-dark">Производство</h2>
                                     </div>
-                                    <p class="section-text wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Производственный сектор России охватывает автомобилестроение, пищевую промышленность, металлургию, химическое производство и многое другое – все эти отрасли требуют надёжную, квалифицированную и экономически эффективную рабочую силу. «Внешперсонал» предоставляет обученных производственных рабочих, операторов станков и сотрудников контроля качества на промышленные предприятия по всей Российской Федерации.</p>
+                                    <p class="section-text wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Автомобилестроение, пищевая промышленность, металлургия, химическое производство и многое другое – все эти отрасли требуют надёжную, квалифицированную и экономически эффективную рабочую силу</p>
                                     
                                     <h4 style="color: #333; font-weight: 600; margin-top: 30px; margin-bottom: 20px;">Специалисты, которых мы предоставляем:</h4>
                                     
@@ -436,11 +479,7 @@
                                         </ul>
                                     </div>
                                     
-                                    <h4 style="color: #333; font-weight: 600; margin-top: 30px; margin-bottom: 20px;">Преимущества наших сотрудников</h4>
                                     
-                                    <p class="mt-4">
-                                        В Индии, Непале и Бангладеш существует широкая база работников, имеющих дипломы ПТУ (ITI) и политехнических учебных заведений, прошедших подготовку именно для работы в производственной среде. Они обладают формальными профессиональными квалификациями, приверженностью сменному графику работы и способностью эффективно действовать в структурированных, регламентированных производственных условиях.
-                                    </p>
                                     <div class="about-btn wow fadeInUp" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
                                         <a href="contact.html" class="btn btn-secondary">
                                             Оставить запрос
@@ -476,74 +515,161 @@
     <!-- Main Wrapper -->
  <!-- ...::: Section Footer Start :::... -->
     <footer class="section-footer">
-        <div class="footer">
-            <div class="">
-                <div class="section-space">
-                    <div class="container-fluid px-4">
-                        <div class="row gy-5">
-                            
-                            
-                         
-                            <div class="col-lg-12">
-                                <div class="footer-widget footer-widget-nav">
-                                    
-                                    <nav class="footer-nav">
-                                        <ul>
-                                            <li><a href="construction.html">Строительство</a></li>
-                                            <li><a href="manufacturing.html">Производство</a></li>
-                                            <li><a href="hospitality.html">Гостеприимство</a></li>
-                                            <li><a href="logistics.html">Логистика</a></li>
-                                            <li><a href="agriculture.html">Сельское хозяйство</a></li>
-                                            <li><a href="it.html">ИТ и техника</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-12">
-                                <div class="footer-widget footer-widget-contact">
-                                    <!-- <h4 class="footer-title">Get In Touch</h4> -->
-                                    <ul class="footer-contact-info">
-                                         
-                                        <li>
-                                            <i class="fa-solid fa-phone"></i>
-                                            <a href="tel:+74994556135">+7 499 455 6135</a>
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-envelope"></i>
-                                            <a href="mailto:info@vneshpersonnel.ru">info@vneshpersonnel.ru</a>
-                                        </li>
-                                       
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+      <div class="footer">
+        <div class="">
+          <div class="section-space">
+            <div class="container-fluid px-4">
+              <div class="row gy-5">
+                <!-- <div class="col-lg-3">
+                  <div class="footer-widget footer-widget-about">
+                    <a href="index.html">
+                      <img
+                        src="assets/imgs/logo.png"
+                        alt="logo-dark"
+                        width="126"
+                        height="56"
+                      />
+                    </a>
+                    <p>
+                      Пионер в области провидения инновационных решений в
+                      области кадров. Мы реализуем высококвалифицированные кадры
+                      во всех сегментах - сквалифицированное управление,
+                      медиайные, и неквалифицированные кадры для строительства,
+                      нефтяногаз, гостеприимства, производства и ИТ.
+                    </p>
+                    <div class="social-menu footer-social-menu">
+                      <a
+                        href="https://www.linkedin.com/company/suntech-engineers-contractor/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                      <a
+                        href="https://www.instagram.com/suntechengineersandcontractors/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                      <a
+                        href="https://www.facebook.com/profile.php?id=100066634811942"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
                     </div>
+                  </div>
+                </div> -->
+                <!-- <div class="col-lg-2">
+                  <div class="footer-widget footer-widget-nav">
+                    <h4 class="footer-title">Услуги</h4>
+                    <nav class="footer-nav">
+                      <ul>
+                        <li>
+                          <a href="foreign-rec.html">Иностранный рекрутмент</a>
+                        </li>
+                        <li>
+                          <a href="migration-legal.html"
+                            >Миграция и юридические документы</a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div> -->
+
+                <div class="col-lg-12">
+                  <div class="footer-widget footer-widget-nav home-footer-selection">
+                    <nav class="footer-nav home-footer-selection__nav">
+                      <ul>
+                        <li><a href="construction.html">Construction</a></li>
+                        <li><a href="manufacturing.html">Manufacturing</a></li>
+                        <li>
+                          <a href="hospitality.html"
+                            >Hospitality and Food Service</a
+                          >
+                        </li>
+                        <li>
+                          <a href="logistics.html"
+                            >Logistics and Warehousing</a
+                          >
+                        </li>
+                        <li><a href="agriculture.html">Agriculture</a></li>
+                        <li>
+                          <a href="it.html"
+                            >Artificial Intelligence Technologies and Technical
+                            Specialists</a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-auto">
-                            <p class="copyright-text mb-0 text-white">&copy; 2026 Suntech Engineers & Contractors. All rights reserved.</p>
-                        </div>
-                        <div class="col-auto">
-                            <div class="footer-bottom-links">
-                                <a href="#" class="text-white">Политика конфиденциальности</a>
-                                <span class="text-white mx-2">|</span>
-                                <a href="#" class="text-white">Условия использования</a>
-                            </div>
-                        </div>
-                    </div>
+                <!-- <div class="col-lg-2">
+                  <div class="footer-widget footer-widget-nav">
+                    <h4 class="footer-title">Страны-источники</h4>
+                    <nav class="footer-nav">
+                      <ul>
+                        <li><a href="india.html">Индия</a></li>
+                        <li><a href="nepal.html">Непал</a></li>
+                        <li><a href="sri-lanka.html">Шри-Ланка</a></li>
+                        <li><a href="bangladesh.html">Бангладеш</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div> -->
+                <div class="col-lg-12">
+                  <div class="footer-widget footer-widget-contact">
+                    <!-- <h4 class="footer-title">Свяжитесь с нами</h4> -->
+                    <ul class="footer-contact-info">
+                      <!-- <li>
+                        <i class="fa-solid 333 fa-location-dot"></i>
+                        <span
+                          >123 Business Avenue,33333 Suite 100<br />New York, NY
+                          10001</span
+                        >
+                      </li> -->
+                      <!-- <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+74994556135">+7 499 455 6135</a>
+                      </li> -->
+                      <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@vneshpersonnel.ru"
+                          >info@vneshpersonnel.ru</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-auto">
+                <p class="copyright-text mb-0 text-white">
+                  &copy; 2026 Suntech Engineers & Contractors. Все права
+                  защищены.
+                </p>
+              </div>
+              <div class="col-auto">
+                <div class="footer-bottom-links">
+                  <a href="#" class="text-white">Политика конфиденциальности</a>
+                  <span class="text-white mx-2">|</span>
+                  <a href="#" class="text-white">Условия обслуживания</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- ...::: Section Footer End :::... -->
-
-   
-    <!-- ...::: Section Footer End :::... -->
-
 
     <button class="scroll-to-top">
         <i class="fa-regular fa-arrow-up"></i>
